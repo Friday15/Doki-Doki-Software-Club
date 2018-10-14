@@ -1,6 +1,10 @@
-Kyle;FUCK REEEEEEEEEE
-Orien;Nothing much man
-Kyle;Oh that's cool
-Player;Restart:line,0;Continue:line,4
-Kyle;This is a test
-Orien;Test test test test
+Player;`background;0
+Player;Choice 1:line,2;Choice 2:line,6
+Player;`background;1
+Sader;REEEEEEEEEEEEEEEE;0;L
+Sader;ERRRRRRRRRRRRRRRR;0;R
+Player;`jump;9
+Player;`background;1
+Yukino;RERERERERERERERE;0;R
+Yukino;ERERERERERERERER;0;L
+Player;Restart:line,0

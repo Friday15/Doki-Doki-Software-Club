@@ -61,23 +61,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ChoiceButton.cs" />
-    <Compile Include="Assets\DialogueManager.cs" />
-    <Compile Include="Assets\DialogueParser.cs" />
-    <Compile Include="Assets\TalkTalk.cs" />
-    <Compile Include="Assets\TalkTutorial.cs" />
+    <Compile Include="Assets\Scripts\BackgroundScript.cs" />
+    <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\ChoiceButton.cs" />
+    <Compile Include="Assets\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\DialogueParser.cs" />
     <None Include="Assets\Dialogue.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/James Rosales/Desktop/test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/James Rosales/Documents/GitHub/Doki-Doki-Software-Club/test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/James Rosales/Desktop/test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/James Rosales/Documents/GitHub/Doki-Doki-Software-Club/test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/James Rosales/Desktop/test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/James Rosales/Documents/GitHub/Doki-Doki-Software-Club/test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/James Rosales/Desktop/test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/James Rosales/Documents/GitHub/Doki-Doki-Software-Club/test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
