@@ -33,9 +33,9 @@ public class DialogueParser : MonoBehaviour
     void Start()
     {
         string file = "Assets/Dialogue";
-        string sceneNum = EditorApplication.currentScene;
-        sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
-        file += sceneNum;
+        //string sceneNum = EditorApplication.currentScene;
+        //sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
+        //file += sceneNum;
         file += ".txt";
 
         print(file.ToString());
