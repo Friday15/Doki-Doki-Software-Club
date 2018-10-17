@@ -1,5 +1,5 @@
 Player;`background;0
-Player;Choice 1:line,2;Choice 2:line,6
+Player;Sader:line,2;Best Girl <3:line,6
 Player;`background;1
 Sader;REEEEEEEEEEEEEEEE;0;L
 Sader;ERRRRRRRRRRRRRRRR;0;R
