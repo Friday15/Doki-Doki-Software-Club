@@ -6,6 +6,7 @@ public class Trigger : MonoBehaviour {
     public Conversation conv;
     public Canvas canvas;
     public Canvas vn;
+    public Canvas ui;
     private int triggered =0;
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -27,6 +28,7 @@ public class Trigger : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                ui.gameObject.SetActive(true);
                 vn.gameObject.SetActive(false);
                 conv.setIsConversing(0);
             }
@@ -39,6 +41,7 @@ public class Trigger : MonoBehaviour {
                 conv.setIsConversing(1);
                 canvas.gameObject.SetActive(false);
                 vn.gameObject.SetActive(true);
+                ui.gameObject.SetActive(false);
             }
         }
     }
