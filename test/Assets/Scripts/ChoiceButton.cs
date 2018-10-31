@@ -39,6 +39,7 @@ public class ChoiceButton : MonoBehaviour
         {
             box.lineNum = int.Parse(commandModifier);
             box.ShowDialogue();
+            box.UpdateUI();
         }
         else if (command == "scene")
         {
