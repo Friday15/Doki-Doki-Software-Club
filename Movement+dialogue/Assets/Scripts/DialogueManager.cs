@@ -131,6 +131,7 @@ public class DialogueManager : MonoBehaviour
 
     void ResetImages()
     {
+        
         if (characterName != "")
         {
             GameObject character = GameObject.Find(characterName);
@@ -144,7 +145,7 @@ public class DialogueManager : MonoBehaviour
         if (characterName != "")
         {
             GameObject character = GameObject.Find(characterName);
-
+            print("dispaly Image");
             SetSpritePositions(character);
 
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
@@ -157,13 +158,13 @@ public class DialogueManager : MonoBehaviour
     {
         if (position == "L")
         {
-            spriteObj.transform.position = new Vector3(250, 300);
+            spriteObj.transform.position = new Vector3(137, 48);
         }
         else if (position == "R")
         {
-            spriteObj.transform.position = new Vector3(750, 300);
+            spriteObj.transform.position = new Vector3(-137, 49);
         }
-        spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
+        spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 1);
     }
 
     void ChangeBackground()
