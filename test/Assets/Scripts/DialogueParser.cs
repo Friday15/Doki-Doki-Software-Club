@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 
 public class DialogueParser : MonoBehaviour
 {
@@ -33,9 +34,10 @@ public class DialogueParser : MonoBehaviour
     void Start()
     {
         string file = "Assets/Dialogue";
-        //string sceneNum = EditorApplication.currentScene;
-        //sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
-        //file += sceneNum;
+        string sceneNum = EditorSceneManager.GetActiveScene().name;
+        sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
+        print(sceneNum+" sParser");
+        file += sceneNum;
         file += ".txt";
 
         print(file.ToString());
@@ -69,6 +71,12 @@ public class DialogueParser : MonoBehaviour
                         if(lineData[1] == "`background" || lineData[1] == "`jump")
                         {
                             DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), "");
+                            lines.Add(lineEntry);
+                        }
+                        else if (lineData[1] == "`clear")
+                        {
+                            print("CLEAR PARSE");
+                            DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, lineData[3]);
                             lines.Add(lineEntry);
                         }
                         else
@@ -106,11 +114,19 @@ public class DialogueParser : MonoBehaviour
 
     public string GetName(int lineNumber)
     {
-        if (lineNumber < lines.Count)
+        try
         {
-            return lines[lineNumber].name;
+            if (lineNumber < lines.Count)
+            {
+                return lines[lineNumber].name;
+            }
+            return "";
         }
-        return "";
+        catch (System.NullReferenceException e)
+        {
+            print(lineNumber);
+            return "";
+        }
     }
 
     public string GetContent(int lineNumber)

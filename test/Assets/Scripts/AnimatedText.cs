@@ -11,8 +11,8 @@ public class AnimatedText : MonoBehaviour
     //Text for the message to display
     public Text textComp;
 
-    public bool done = true;
-
+    public bool done = false;
+    public bool cancel = false;
     /*
     // Use this for initialization
     void Start()
@@ -39,7 +39,7 @@ public class AnimatedText : MonoBehaviour
 
         //Call the function and expect yield to return
         StopAllCoroutines();
-        done = true;
+        done = false;
         StartCoroutine(TypeText());
     }
 
@@ -51,7 +51,7 @@ public class AnimatedText : MonoBehaviour
         message = textComp.text;
         //Set the text to be blank first
         textComp.text = "";
-        print("THIS SHOULD BE WORKING REEEE");
+        //print("THIS SHOULD BE WORKING REEEE");
     }
 
     IEnumerator TypeText()
@@ -59,13 +59,18 @@ public class AnimatedText : MonoBehaviour
         //Split each char into a char array
         foreach (char letter in message.ToCharArray())
         {
+            if (cancel)
+                break;
+
             //Add 1 letter each
             textComp.text += letter;
             yield return 0;
             yield return new WaitForSeconds(letterPaused);
         }
         done = true;
-        print("SHOULD PRINT AFTER STOPPING??");
+        //cancel = true;
+        textComp.text = message;
+        //print("SHOULD PRINT AFTER STOPPING??");
     }
 
 }

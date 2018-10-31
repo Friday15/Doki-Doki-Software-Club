@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameBox;
     public GameObject choiceBox;
     public AnimatedText animatedText;
+    public Animator transition;
 
     // Use this for initialization
     void Start()
@@ -33,40 +34,43 @@ public class DialogueManager : MonoBehaviour
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
         animatedText = GameObject.Find("TextBox").GetComponent<AnimatedText>();
         lineNum = -1;
+        transition.SetTrigger("fadein");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!clickOnce)     //preloads background
+        {
+            lineNum++;
+            ShowDialogue();
+            //print(lineNum);
+            UpdateUI();
+            clickOnce = true;
+        }
         if (!playerTalking)
         {
             ClearButtons();
         }
 
-        if (dialogueBox.GetComponent<AnimatedText>().done == false && clickOnce)
+        if (!dialogueBox.GetComponent<AnimatedText>().done && !dialogueBox.GetComponent<AnimatedText>().cancel && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")))   //skips the dialogue
         {
-            dialogueBox.GetComponent<AnimatedText>().StopAllCoroutines();
-            dialogueBox.text = dialogue;
-        }
-        else
-        {
-            clickOnce = false;
+            dialogueBox.GetComponent<AnimatedText>().cancel = true;
         }
 
-        if(Input.GetMouseButtonDown(0) && playerTalking == false)
+        else if((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")) && playerTalking == false && dialogueBox.GetComponent<AnimatedText>().done)   //if dialogue is already skipped OR already done, go to next line
         {
+            dialogueBox.GetComponent<AnimatedText>().cancel = false;
             lineNum++;
             ShowDialogue();
-            print(lineNum);
+            //print(lineNum);
             UpdateUI();
-            clickOnce = true;
         }
 
     }
 
     public void ShowDialogue()
     {
-        ResetImages();
         ParseLine();
     }
 
@@ -81,7 +85,7 @@ public class DialogueManager : MonoBehaviour
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            print("Clearing buttons");
+            //print("Clearing buttons");
             Button b = buttons[i];
             buttons.Remove(b);
             Destroy(b.gameObject);
@@ -90,14 +94,38 @@ public class DialogueManager : MonoBehaviour
 
     void ParseLine()
     {
+        try
+        {
+            print(parser.GetContent(lineNum)+" PARSE LINE");
+        }
+        catch(System.Exception e)
+        {
+            print(e.StackTrace);
+        }
+        
         if (parser.GetName(lineNum) != "Player")
         {
-            playerTalking = false;
-            characterName = parser.GetName(lineNum);
-            dialogue = parser.GetContent(lineNum);
-            pose = parser.GetPose(lineNum);
-            position = parser.GetPosition(lineNum);
-            DisplayImages();
+            if (parser.GetContent(lineNum) == "`loadchar")
+            {
+                playerTalking = false;
+                characterName = parser.GetName(lineNum);
+                pose = parser.GetPose(lineNum);
+                position = parser.GetPosition(lineNum);
+                DisplayImages();
+                lineNum++;
+                ShowDialogue();
+                UpdateUI();
+            }
+
+            else
+            {
+                playerTalking = false;
+                characterName = parser.GetName(lineNum);
+                dialogue = parser.GetContent(lineNum);
+                pose = parser.GetPose(lineNum);
+                position = parser.GetPosition(lineNum);
+                DisplayImages();
+            }
         }
         else
         {
@@ -114,6 +142,14 @@ public class DialogueManager : MonoBehaviour
             {
                 lineNum = parser.GetPose(lineNum);
                 ShowDialogue();
+            }
+            else if(parser.GetContent(lineNum) == "`clear")
+            {
+                print("CLEAR");
+                ResetImages(parser.GetPosition(lineNum));
+                lineNum++;
+                ShowDialogue();
+                UpdateUI();
             }
             else
             {
@@ -145,14 +181,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void ResetImages()
+    void ResetImages(string charName)
     {
-        if (characterName != "")
-        {
-            GameObject character = GameObject.Find(characterName);
-            SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = null;
-        }
+        print("RESETIMAGES" + charName);
+        GameObject character = GameObject.Find(charName);
+        SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
+        currSprite.sprite = null;
     }
 
     void DisplayImages()
@@ -162,28 +196,45 @@ public class DialogueManager : MonoBehaviour
             GameObject character = GameObject.Find(characterName);
 
             SetSpritePositions(character);
-
-            SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = character.GetComponent<Character>().characterPoses[pose];
         }
     }
 
 
     void SetSpritePositions(GameObject spriteObj)
     {
+        SpriteRenderer currSprite = spriteObj.GetComponent<SpriteRenderer>();
+
         if (position == "L")
         {
             spriteObj.transform.position = new Vector3(250, 280);
         }
         else if (position == "R")
         {
-            spriteObj.transform.position = new Vector3(750, 280);
+            spriteObj.transform.position = new Vector3(700, 280);
         }
         else if (position == "M")
         {
             spriteObj.transform.position = new Vector3(500, 280);
         }
+        else if (position == "LF")  //F == flip
+        {
+            currSprite.flipX = true;
+            spriteObj.transform.position = new Vector3(250, 280);
+        }
+        else if (position == "RF")
+        {
+            currSprite.flipX = true;
+            spriteObj.transform.position = new Vector3(700, 280);
+        }
+        else if (position == "MF")
+        {
+            currSprite.flipX = true;
+            spriteObj.transform.position = new Vector3(500, 280);
+        }
         spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
+
+        currSprite.sprite = spriteObj.GetComponent<Character>().characterPoses[pose];
+        //transition.SetTrigger("fadeinChar");
     }
 
     void ChangeBackground()
@@ -194,7 +245,20 @@ public class DialogueManager : MonoBehaviour
         Shader shader = Shader.Find("Unlit/Texture");
         bg.GetComponent<Renderer>().material.shader = shader; 
         bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
-        lineNum++;
-        ShowDialogue();
+        StartCoroutine(waitAnimToFinish());
+        playerTalking = true;
     }
+
+    IEnumerator waitAnimToFinish()
+    {
+        //print("linenum before " + lineNum);
+        yield return new WaitForSeconds(1);
+        //print("wait 1 sec");
+        lineNum++;
+        //print("linenum after " + lineNum);
+        ShowDialogue();
+        UpdateUI();
+        playerTalking = false;
+    }
+
 }
