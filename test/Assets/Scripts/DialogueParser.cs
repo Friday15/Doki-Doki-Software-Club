@@ -36,7 +36,7 @@ public class DialogueParser : MonoBehaviour
         string file = "Assets/Dialogue";
         string sceneNum = EditorSceneManager.GetActiveScene().name;
         sceneNum = Regex.Replace(sceneNum, "[^0-9]", "");
-        print(sceneNum+" sParser");
+        print(sceneNum+" Parser");
         file += sceneNum;
         file += ".txt";
 
@@ -75,7 +75,7 @@ public class DialogueParser : MonoBehaviour
                         }
                         else if (lineData[1] == "`clear")
                         {
-                            print("CLEAR PARSE");
+                            //print("CLEAR PARSE");
                             DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, lineData[3]);
                             lines.Add(lineEntry);
                         }

@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
         characterName = "";
         pose = 0;
         position = "L";
-        playerTalking = false;
+        playerTalking = true;
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
         animatedText = GameObject.Find("TextBox").GetComponent<AnimatedText>();
         lineNum = -1;
@@ -44,7 +44,7 @@ public class DialogueManager : MonoBehaviour
         {
             lineNum++;
             ShowDialogue();
-            //print(lineNum);
+            print("CLICKONCE "+lineNum);
             UpdateUI();
             clickOnce = true;
         }
@@ -56,6 +56,7 @@ public class DialogueManager : MonoBehaviour
         if (!dialogueBox.GetComponent<AnimatedText>().done && !dialogueBox.GetComponent<AnimatedText>().cancel && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")))   //skips the dialogue
         {
             dialogueBox.GetComponent<AnimatedText>().cancel = true;
+            print("CANCELLING TEXT " + lineNum);
         }
 
         else if((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")) && playerTalking == false && dialogueBox.GetComponent<AnimatedText>().done)   //if dialogue is already skipped OR already done, go to next line
@@ -63,7 +64,7 @@ public class DialogueManager : MonoBehaviour
             dialogueBox.GetComponent<AnimatedText>().cancel = false;
             lineNum++;
             ShowDialogue();
-            //print(lineNum);
+            print("ACTION "+lineNum);
             UpdateUI();
         }
 
@@ -85,7 +86,7 @@ public class DialogueManager : MonoBehaviour
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            //print("Clearing buttons");
+            print("Clearing buttons");
             Button b = buttons[i];
             buttons.Remove(b);
             Destroy(b.gameObject);
@@ -145,7 +146,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if(parser.GetContent(lineNum) == "`clear")
             {
-                print("CLEAR");
+                print("CLEARING "+ parser.GetPosition(lineNum));
                 ResetImages(parser.GetPosition(lineNum));
                 lineNum++;
                 ShowDialogue();
@@ -153,6 +154,7 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
+                print("CREATING BUTTON");
                 playerTalking = true;
                 characterName = "";
                 dialogue = "";
@@ -178,6 +180,10 @@ public class DialogueManager : MonoBehaviour
             b.transform.localPosition = new Vector3(0, -25 + (i * 50));
             b.transform.localScale = new Vector3(1, 1, 1);
             buttons.Add(b);
+        }
+        if (playerTalking)
+        {
+            print("SHOULD PRINT");
         }
     }
 
@@ -258,7 +264,7 @@ public class DialogueManager : MonoBehaviour
         //print("linenum after " + lineNum);
         ShowDialogue();
         UpdateUI();
-        playerTalking = false;
+        //playerTalking = false;
     }
 
 }

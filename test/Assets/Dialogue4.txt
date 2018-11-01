@@ -1,6 +1,19 @@
 Player;`background;0
-Player;*observing students playing board games* Are these even allowed here? :line,2
+RIA;`loadchar;0;L
+Player;*observing students playing board games* Are these even allowed here? :line,3
 RIA;Why not? Students are free to borrow board games here at the American Corner. Other materials such as books, magazines, journals and more from the American Embassy are also available here.;0;L
-Player;Wow! Such an amazing space and a commendable partnership! :line,4
+Player;Wow! Such an amazing space and a commendable partnership! :line,5
 ASRA;*walking towards Player and RIA*: Hi RIA! Who’s with you today?;0;R
 RIA;I am with (Player) now. ASRA, meet (Player). (Player), meet ASRA. She is the American Studies Reference Assistant.;0;L
+ASRA;Nice to meet you (Player). Do you know how to search for online articles? You can find them within the library website. Here is how: ASRA teaches the student how to search following the instructions in this link http://libanswers.dlsu.edu.ph/faq/23440;0;R
+ASRA;There are databases in the library that anyone with access can search regardless of degree program. Examples are EBSCO, JSTOR, and PROQUEST. What do you call these databases?There are databases in the library that anyone with access can search regardless of degree program. Examples are EBSCO, JSTOR, and PROQUEST. What do you call these databases? *ASSUME ANSWER IS MULTIDISCIPLINARY FOR NOW*;0;R
+Player;Subject-specific databases:line,10;Statistical databases:line,10;Multidisciplinary databases:line,12;Bibliographic databases:line,10
+RIA;"Nah ah! That’s not the one . . . " and proceeds with an explanation what the choice is about.;0;L
+Player;`jump;9
+ASRA;ASRA will acknowledge the correct answer and give the item. "Well done! Have my netbook."";0;R
+Player;Thank you, ASRA. I am now ready to do my term papers!:line,14
+ASRA;You're welcome. Hope you’ve enjoyed it.;0;R
+RIA;Thanks for the time ASRA. We'll head on to SciTRA now.;0;L
+Player;`clear;;ASRA
+Player;`clear;;RIA
+Player;Restart:line,0
