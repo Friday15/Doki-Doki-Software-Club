@@ -3,34 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Trigger : MonoBehaviour {
-    public Conversation conv;
     public Canvas canvas;
     public Canvas vn;
     public Canvas ui;
     private int triggered =0;
+    private int isConversing=0;
+    public int getIsConversing()
+    {
+        return isConversing;
+    }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.name.Equals("Conversation"))
+        if(col.gameObject.name.Equals("hammann"))
         {
             startConversation();
         }
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals("Conversation"))
+        if (col.gameObject.name.Equals("hammann"))
         {
             stopConversation();
         }
     }
     void Update()
     {
-        if (conv.getIsConversing() == 1)
+        if (isConversing == 1)
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 ui.gameObject.SetActive(true);
                 vn.gameObject.SetActive(false);
-                conv.setIsConversing(0);
+                isConversing=0;
             }
         }
         if(triggered == 1)
@@ -38,7 +42,7 @@ public class Trigger : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 triggered = 0;
-                conv.setIsConversing(1);
+                isConversing=1;
                 canvas.gameObject.SetActive(false);
                 vn.gameObject.SetActive(true);
                 ui.gameObject.SetActive(false);

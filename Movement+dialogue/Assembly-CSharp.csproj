@@ -65,7 +65,6 @@
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\ChoiceButton.cs" />
-    <Compile Include="Assets\Scripts\Conversation.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\DialogueParser.cs" />
     <Compile Include="Assets\Scripts\MCControl.cs" />
