@@ -79,6 +79,12 @@ public class DialogueParser : MonoBehaviour
                             DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, lineData[3]);
                             lines.Add(lineEntry);
                         }
+
+                        else if(lineData[1] == "`end")
+                        {
+                            DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
+                            lines.Add(lineEntry);
+                        }
                         else
                         {
                             DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "");

@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -33,8 +34,9 @@ public class DialogueManager : MonoBehaviour
         playerTalking = true;
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
         animatedText = GameObject.Find("TextBox").GetComponent<AnimatedText>();
+        transition = GameObject.Find("AnimPanel").GetComponent<Animator>();
         lineNum = -1;
-        transition.SetTrigger("fadein");
+        //transition.SetTrigger("fadein");
     }
 
     // Update is called once per frame
@@ -152,6 +154,10 @@ public class DialogueManager : MonoBehaviour
                 ShowDialogue();
                 UpdateUI();
             }
+            else if(parser.GetContent(lineNum) == "`end")
+            {
+                endScene();
+            }
             else
             {
                 print("CREATING BUTTON");
@@ -265,6 +271,19 @@ public class DialogueManager : MonoBehaviour
         ShowDialogue();
         UpdateUI();
         //playerTalking = false;
+    }
+
+    void endScene()
+    {
+        playerTalking = true;
+        StartCoroutine(waitAnimToFinishEnd());
+    }
+
+    IEnumerator waitAnimToFinishEnd()
+    {
+        transition.SetTrigger("fadeout");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(0);
     }
 
 }

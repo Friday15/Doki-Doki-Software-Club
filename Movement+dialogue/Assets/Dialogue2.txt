@@ -13,4 +13,4 @@ LORA;LORA, will acknowledge the correct answer and give the item. "Good job! Her
 LORA;Other than books, we also have theses, dissertations and faculty publications. You may ask ArRA how to locate them.;0;R
 Player;`clear;;LORA
 Player;`clear;;RIA
-Player;Restart:line,0
+Player;`end
