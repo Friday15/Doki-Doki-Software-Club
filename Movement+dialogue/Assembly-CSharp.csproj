@@ -61,15 +61,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BackgroundScript.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\Character.cs" />
-    <Compile Include="Assets\Scripts\ChoiceButton.cs" />
-    <Compile Include="Assets\Scripts\DialogueManager.cs" />
-    <Compile Include="Assets\Scripts\DialogueParser.cs" />
     <Compile Include="Assets\Scripts\MCControl.cs" />
     <Compile Include="Assets\Scripts\Trigger.cs" />
+    <Compile Include="Assets\VisualNovel\Scripts\AnimatedText.cs" />
+    <Compile Include="Assets\VisualNovel\Scripts\BackgroundScript.cs" />
+    <Compile Include="Assets\VisualNovel\Scripts\Character.cs" />
+    <Compile Include="Assets\VisualNovel\Scripts\ChoiceButton.cs" />
+    <Compile Include="Assets\VisualNovel\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\VisualNovel\Scripts\DialogueParser.cs" />
     <None Include="Assets\Dialogue.txt" />
+    <None Include="Assets\Dialogue4.txt" />
+    <None Include="Assets\Dialogue2.txt" />
+    <None Include="Assets\Dialogue3.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Acer/Documents/GitHub/Doki-Doki-Software-Club/Movement+dialogue/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

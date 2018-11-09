@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Trigger : MonoBehaviour {
     public Canvas canvas;
-    public Canvas vn;
     public Canvas ui;
     private int triggered =0;
     private int isConversing=0;
+
     public int getIsConversing()
     {
         return isConversing;
@@ -33,7 +34,8 @@ public class Trigger : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 ui.gameObject.SetActive(true);
-                vn.gameObject.SetActive(false);
+                //vn.gameObject.SetActive(false);
+                
                 isConversing=0;
             }
         }
@@ -44,7 +46,8 @@ public class Trigger : MonoBehaviour {
                 triggered = 0;
                 isConversing=1;
                 canvas.gameObject.SetActive(false);
-                vn.gameObject.SetActive(true);
+                SceneManager.LoadScene(1);
+                //vn.gameObject.SetActive(true);
                 ui.gameObject.SetActive(false);
             }
         }
