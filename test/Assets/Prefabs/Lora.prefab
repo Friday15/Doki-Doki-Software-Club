@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1876063521313010}
+  m_RootGameObject: {fileID: 1470180929588252}
   m_IsPrefabAsset: 1
---- !u!1 &1876063521313010
+--- !u!1 &1470180929588252
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224789562158162626}
-  - component: {fileID: 212998719852218612}
-  - component: {fileID: 114901355095875034}
+  - component: {fileID: 224512329650774388}
+  - component: {fileID: 212432331937722114}
+  - component: {fileID: 114565573083909168}
   m_Layer: 5
   m_Name: LORA
   m_TagString: Untagged
@@ -28,12 +28,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114901355095875034
+--- !u!114 &114565573083909168
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1876063521313010}
+  m_GameObject: {fileID: 1470180929588252}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e157569be1c154b9ea33d259c64ded, type: 3}
@@ -41,12 +41,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPoses:
   - {fileID: 21300000, guid: 85ccb8b99e1d0cb4d800ad6c54fa824c, type: 3}
---- !u!212 &212998719852218612
+--- !u!212 &212432331937722114
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1876063521313010}
+  m_GameObject: {fileID: 1470180929588252}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -87,12 +87,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!224 &224789562158162626
+--- !u!224 &224512329650774388
 RectTransform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1876063521313010}
+  m_GameObject: {fileID: 1470180929588252}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 12, y: 12, z: 1}
