@@ -16,4 +16,4 @@ ASRA;You're welcome. Hope you’ve enjoyed it.;0;R
 RIA;Thanks for the time ASRA. We'll head on to SciTRA now.;0;L
 Player;`clear;;ASRA
 Player;`clear;;RIA
-Player;Restart:line,0
+Player;`end

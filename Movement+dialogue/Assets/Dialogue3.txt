@@ -13,4 +13,4 @@ ArRA;ASRA is nearby too. You may visit her now.;0;R
 RIA;Bye ArRA! Nice seeing you again. "Til next time.";0;L
 Player;`clear;;ArRA
 Player;`clear;;RIA
-Player;Restart:line,0
+Player;`end
