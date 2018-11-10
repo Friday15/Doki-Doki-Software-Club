@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/VisualNovelScene.unity
-    guid: 7916a49f7f553f343b6eceb299ef338d
   - enabled: 1
     path: Assets/VisualNovel/Scenes/VisualNovelScene2.unity
     guid: dab98e6e92e238445ae6dcbeca97d958
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene3.unity
+    guid: f957b72227df1e84bb1fb170abd5da35
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene4.unity
+    guid: ffbf076e41231384689a1d4172fdd0cb
   m_configObjects: {}
