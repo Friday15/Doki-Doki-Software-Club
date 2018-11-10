@@ -1,42 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Trigger : MonoBehaviour {
+    public Conversation conv;
     public Canvas canvas;
+    public Canvas vn;
     public Canvas ui;
     private int triggered =0;
-    private int isConversing=0;
 
-    public int getIsConversing()
-    {
-        return isConversing;
-    }
+    public ObjectiveController OC;
+    //PLS DONT COPY IDK ITS JUST PARA MAY SAMPLE OBJECTIVES AKO
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.name.Equals("hammann"))
+        if(col.gameObject.name.Equals("Conversation"))
         {
             startConversation();
         }
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals("hammann"))
+        if (col.gameObject.name.Equals("Conversation"))
         {
             stopConversation();
         }
     }
     void Update()
     {
-        if (isConversing == 1)
+        if (conv.getIsConversing() == 1)
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 ui.gameObject.SetActive(true);
-                //vn.gameObject.SetActive(false);
-                
-                isConversing=0;
+                vn.gameObject.SetActive(false);
+                conv.setIsConversing(0);
+
+                OC.MissionComplete(1, 2);
+                //PLS DONT COPY IDK ITS JUST PARA MAY SAMPLE OBJECTIVES AKO
             }
         }
         if(triggered == 1)
@@ -44,10 +44,9 @@ public class Trigger : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 triggered = 0;
-                isConversing=1;
+                conv.setIsConversing(1);
                 canvas.gameObject.SetActive(false);
-                SceneManager.LoadScene(1);
-                //vn.gameObject.SetActive(true);
+                vn.gameObject.SetActive(true);
                 ui.gameObject.SetActive(false);
             }
         }
@@ -62,5 +61,7 @@ public class Trigger : MonoBehaviour {
     {
         triggered = 0;
         canvas.gameObject.SetActive(false);
+
+        
     }
 }
