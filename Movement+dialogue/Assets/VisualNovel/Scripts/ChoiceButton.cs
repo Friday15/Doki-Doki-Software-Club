@@ -38,6 +38,7 @@ public class ChoiceButton : MonoBehaviour
         if (command == "line")
         {
             box.lineNum = int.Parse(commandModifier);
+            print(box.lineNum+" CHOICE BUTTON");
             box.ShowDialogue();
             box.UpdateUI();
         }

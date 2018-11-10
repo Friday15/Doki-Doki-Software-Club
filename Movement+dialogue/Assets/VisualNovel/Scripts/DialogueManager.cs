@@ -152,7 +152,12 @@ public class DialogueManager : MonoBehaviour
                 ResetImages(parser.GetPosition(lineNum));
                 lineNum++;
                 ShowDialogue();
-                UpdateUI();
+                if (parser.GetContent(lineNum+1) != "`end")
+                {
+                    characterName = "";
+                    dialogue = "";
+                    UpdateUI();
+                }
             }
             else if(parser.GetContent(lineNum) == "`end")
             {
@@ -281,8 +286,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator waitAnimToFinishEnd()
     {
-        transition.SetTrigger("fadeout");
-        yield return new WaitForSeconds(2);
+        transition.SetTrigger("fadein");
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(0);
     }
 
