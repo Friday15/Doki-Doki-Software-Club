@@ -9,12 +9,13 @@ RIA;I am with (Player) now. ASRA, meet (Player). (Player), meet ASRA. She is the
 ASRA;Nice to meet you (Player). Do you know how to search for online articles? You can find them within the library website.;0;R
 ASRA;Here is how: ASRA teaches the student how to search following the instructions in this link http://libanswers.dlsu.edu.ph/faq/23440;0;R
 ASRA;There are databases in the library that anyone with access can search regardless of degree program.;0;R
-ASRA;Examples are EBSCO, JSTOR, and PROQUEST. What do you call these databases? ASSUME ANSWER IS MULTIDISCIPLINARY FOR NOW*;0;R
-Player;Subject-specific databases:line,13;Statistical databases:line,13;Multidisciplinary databases:line,15;Bibliographic databases:line,13
+ASRA;Examples are EBSCO, JSTOR, and PROQUEST.;0;R
+ASRA;What do you call these databases? ASSUME ANSWER IS MULTIDISCIPLINARY FOR NOW*;0;R
+Player;Subject-specific databases:line,14;Statistical databases:line,14;Multidisciplinary databases:line,16;Bibliographic databases:line,14
 RIA;"Nah ah! That's not the one . . . " and proceeds with an explanation what the choice is about.;0;L
-Player;`jump;12
+Player;`jump;13
 ASRA;ASRA will acknowledge the correct answer and give the item. "Well done! Have my netbook."";0;R
-Player;Thank you, ASRA. I am now ready to do my term papers!:line,17
+Player;Thank you, ASRA. I am now ready to do my term papers!:line,18
 ASRA;You're welcome. Hope you've enjoyed it.;0;R
 RIA;Thanks for the time ASRA. We'll head on to SciTRA now.;0;L
 Player;`clear;;ASRA
