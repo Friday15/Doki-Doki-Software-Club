@@ -2,8 +2,8 @@ Player;`background;0
 RIA;Hi LORA! Meet my friend, (Player).;0;L
 LORA;Hello, (Player). I'm LORA your Library Online Reference Assistant, nice to meet you!;0;R
 Player;Oh you're LORA! Finally I met you.:line,4
-LORA;Glad to meet you too! Welcome to the reference desk where you can ask your questions about your researches through email, chat,;0;R
-LORA; phone, text. Skype, Facebook and Twitter!;0;R
+LORA;Glad to meet you too! Welcome to the reference desk where you can ask your questions about your researches;0;R
+LORA; through email, chat, phone, text. Skype, Facebook and Twitter!;0;R
 LORA;On this floor, you will find reference books like dictionaries, handbooks, encyclopedias and many others.;0;R
 Player;Awesome!:line,8
 LORA;Now, what is the fastest way to get the location of these books in the library to find them?;0;R
