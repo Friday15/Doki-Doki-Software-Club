@@ -39,7 +39,7 @@ public class Trigger : MonoBehaviour {
                 isConversing=0;
 
                 OC.MissionComplete(1, 2);
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
                 //PLS DONT COPY IDK ITS JUST PARA MAY SAMPLE OBJECTIVES AKO
             }
         }
