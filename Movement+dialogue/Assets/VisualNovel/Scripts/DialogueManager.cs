@@ -74,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         else if((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")) && playerTalking == false && dialogueBox.GetComponent<AnimatedText>().done)   //if dialogue is already skipped OR already done, go to next line
         {
             
-            if (parser.GetName(lineNum + 1) != characterName && !charAnimator.GetBool("fadeout" + characterName) && (charAnimator.GetBool("idle" + characterName) || charAnimator.GetBool("fadein" + characterName)))
+            if (parser.GetName(lineNum) == characterName && !charAnimator.GetBool("fadeout" + characterName) && (charAnimator.GetBool("idle" + characterName) || charAnimator.GetBool("fadein" + characterName)))
             {
              charAnimator.SetBool("fadeout" + characterName, true);
              charAnimator.SetBool("idle" + characterName, false);
@@ -327,16 +327,34 @@ public class DialogueManager : MonoBehaviour
         GameObject bg = GameObject.Find("Background");
         Texture bgTexture = (Texture)bg.GetComponent<BackgroundScript>().bg[pose];
         Shader shader = Shader.Find("Unlit/Texture");
+        StartCoroutine(WaitAnimToFinish(bg, bgTexture));
         bg.GetComponent<Renderer>().material.shader = shader; 
-        bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
-        StartCoroutine(WaitAnimToFinish());
         playerTalking = true;
     }
 
-    IEnumerator WaitAnimToFinish()
+    IEnumerator WaitAnimToFinish(GameObject bg, Texture bgTexture)
     {
-        //print("linenum before " + lineNum);
-        yield return new WaitForSeconds(1);
+        if (clickOnce)
+        {
+            transition.SetBool("fadeout", true);
+
+            yield return new WaitForSeconds(1);
+
+            transition.SetBool("fadeout", false);
+            bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
+            transition.SetBool("fadein", true);
+
+            yield return new WaitForSeconds(1);
+
+            transition.SetBool("fadein", false);
+        }
+        else
+        {
+            //print("linenum before " + lineNum);
+            bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
+            yield return new WaitForSeconds(1);
+        }
+
         //print("wait 1 sec");
         lineNum++;
         //print("linenum after " + lineNum);
@@ -353,8 +371,9 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator WaitAnimToFinishEnd()
     {
-        transition.SetTrigger("fadein");
+        transition.SetBool("fadeout", true);
         yield return new WaitForSeconds(1);
+        transition.SetBool("fadeout", false);
         SceneManager.LoadScene(0);
     }
 
@@ -373,4 +392,5 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
     }
+
 }
