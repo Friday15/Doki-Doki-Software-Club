@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,7 @@ public class Trigger : MonoBehaviour {
     public Canvas canvas;
     //public Canvas vn;
     public Canvas ui;
-    private int triggered =0;
+    private String triggered ="";
     public int isConversing = 0;
     
 
@@ -16,56 +17,48 @@ public class Trigger : MonoBehaviour {
     //PLS DONT COPY IDK ITS JUST PARA MAY SAMPLE OBJECTIVES AKO
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.name.Equals("NPC"))
+        if(col.gameObject.name.Equals("NPC") || col.gameObject.name.Equals("hammann1") || col.gameObject.name.Equals("hammann2"))
         {
-            startConversation();
+            triggered = col.gameObject.name.ToString();
+            canvas.gameObject.SetActive(true);
+            print(col.gameObject.name);
         }
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals("NPC"))
+        if (col.gameObject.name.Equals("NPC") || col.gameObject.name.Equals("hammann1") || col.gameObject.name.Equals("hammann2"))
         {
-            stopConversation();
+            triggered = "";
+            canvas.gameObject.SetActive(false);
         }
     }
     void Update()
     {
+        if (!triggered.Equals(""))
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                isConversing = 1;
+                canvas.gameObject.SetActive(false);
+                ui.gameObject.SetActive(false);
+            }
+        }
         if (isConversing == 1)
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 ui.gameObject.SetActive(true);
-                //vn.gameObject.SetActive(false);
                 isConversing=0;
-
                 OC.MissionComplete(1, 2);
-                SceneManager.LoadScene(2);
-                //PLS DONT COPY IDK ITS JUST PARA MAY SAMPLE OBJECTIVES AKO
+                if(triggered.Equals("NPC"))
+                    SceneManager.LoadScene(1);
+                if (triggered.Equals("hammann1"))
+                    SceneManager.LoadScene(2);
+                if (triggered.Equals("hammann2"))
+                    SceneManager.LoadScene(3);
+                triggered = "";
             }
         }
-        if(triggered == 1)
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                triggered = 0;
-                isConversing =1;
-                canvas.gameObject.SetActive(false);
-                //vn.gameObject.SetActive(true);
-                ui.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    private void startConversation()
-    {
-        triggered = 1;
-        canvas.gameObject.SetActive(true);
-    }
-    private void stopConversation()
-    {
-        triggered = 0;
-        canvas.gameObject.SetActive(false);
-
         
     }
 }
