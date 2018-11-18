@@ -398,6 +398,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 212753797690127082, guid: b9b60580532cb8246b31d710b50a7d14,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9b60580532cb8246b31d710b50a7d14, type: 2}
   m_IsPrefabAsset: 0
@@ -1282,6 +1287,7 @@ MonoBehaviour:
   lineNum: 0
   playerTalking: 0
   clickOnce: 0
+  playerControl: 1
   dialogueBox: {fileID: 1143150633}
   nameBox: {fileID: 158969365}
   choiceBox: {fileID: 458033829}
@@ -2289,16 +2295,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224807118432011068, guid: 0c9000188bc1ec84ca2a6c3abb0c493e,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 224807118432011068, guid: 0c9000188bc1ec84ca2a6c3abb0c493e,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 212124451152696578, guid: 0c9000188bc1ec84ca2a6c3abb0c493e,
         type: 2}
