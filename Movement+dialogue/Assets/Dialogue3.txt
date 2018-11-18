@@ -1,0 +1,18 @@
+Player;`background;0
+RIA;`loadchar;0;L
+ArRA;Oh hi! I am ArRA your Archives Reference Assistant. Welcome to the University Archives.;0;R
+Player;Hello, ArRA. Howdy? What is an archives by the way? :line,4
+ArRA;I'm doing fine. Thanks for asking. An archives is an institutional repository that houses the works of students;0;R
+ArRA;and other members of the academic community such as theses, dissertations, university and faculty publications.;0;R
+ArRA;In short, an institutional memory!;0;R
+Player;Ohhhh. So my thesis will go here? :line,8
+ArRA;Absolutely! Do you know what type of library materials are they?;0;R
+Player;Both Primary and Secondary Sources:line,12;Tertiary Sources:line,10;Secondary Sources:line,10;Primary Sources:line,10
+RIA;Nah ah! That's not the one...and proceeds with an explanation what the choice is about.;0;L
+Player;`jump;9
+ArRA;ArRA, will acknowledge the correct answer and give the item. "Excellent! Here is my scroll.";0;R
+ArRA;ASRA is nearby too. You may visit her now.;0;R
+RIA;Bye ArRA! Nice seeing you again. 'Til next time.;0;L
+Player;`clear;;ArRA
+Player;`clear;;RIA
+Player;`end
