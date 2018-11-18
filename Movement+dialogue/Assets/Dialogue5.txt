@@ -1,0 +1,34 @@
+Player;`background;0
+RIA;`loadchar;0;L
+Player;So where are we now?:line,3
+RIA;We are now here at the Science and Technology Complex Campus.;0;L
+RIA;There are three libraries in this campus: Pre-school Library, Integrated School Library, and a College Library.;0;L
+RIA;This is the College Library, and that is SciTRA.;0;L
+Player;`background;1
+RIA;Hi, SciTRA! This is (Player). I am guiding him/her through his/her InfoSMART journey.;0;L
+RIA;S/he now knows how to seek for the right information and manage it effectively. S/he's here for the next step.;0;L
+SciTRA;Oh, hi, (Player)! In that case, let me show you how to assess information critically using the CRAAP Test.;0;R
+Player;Crap? Seriously, crap?:line,11
+SciTRA;Oh no, not that! I'm referring to C-R-A-A-P: Currency, Relevance, Authority, Accuracy, and Purpose of information sources.;0;R
+SciTRA;The CRAAP Test is a list of questions to help you evaluate the information you find. *Checklist and images will be flashed*;0;R
+SciTRA;Is the information timely?;0;R
+SciTRA;Is this the right information for your topic?;0;R
+SciTRA;Is the source of information credible?;0;R
+SciTRA;Is the content of information reliable, truthful, and correct?;0;R
+SciTRA;Why was the information created in the first place?;0;R
+Player;Oh, now I get it! My topic for my paper is about online games. And I found this book.:line,19
+SciTRA;In that case, let's see if that's the right source for your topic.;0;R
+SciTRA;*something happens. the script is incomplete*;0;R
+Player;Oh, now I get it!:line,22
+SciTRA; Well then, which of the following questions should you ask yourself when you check the relevance of an information source?;0;R
+SciTRA; ASSUME ANSWER IS "Does the source add something new to your knowledge of the topic?";0;R
+Player;Is the author an established expert in the field?:line,25;Is the source free of bias?:line,25;Does the source add something new to your knowledge of the topic?:line,27;Was the source published in the past five years?:line,25
+RIA;"Nah ah! That's not the one . . . " and proceeds with an explanation what the choice is about.;0;L
+Player;`jump;22
+SciTRA;SciTRA will acknowledge the correct answer and give the item. "Great! Here's my flask.";0;R
+Player;Thank you, SciTRA. I now know that I need to evaluate my sources using the CRAAP Test.:line,29
+SciTRA;You're welcome.;0;R
+RIA;Thanks, SciTRA. It's time to see KiRA now.;0;L
+Player;`clear;;SciTRA
+Player;`clear;;RIA
+Player;`end

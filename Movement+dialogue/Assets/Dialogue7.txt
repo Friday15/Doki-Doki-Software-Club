@@ -1,0 +1,7 @@
+Player;`background;0
+RIA;`loadchar;0;L
+CORA;Welcome to the Business Library located in RCBC Plaza in Makati. I am CORA, your Corporate Reference Assistant.;0;R
+Player;Cool! I didn’t even know we have a library in Makati. Hi I’m (Player):line,4
+RIA;Yes. This library primarily serves our MBA and DBA students.;0;L
+Player;So if they are working in corporations here in Makati, they don’t have to go to Taft campus for library resources and services.:line,6
+CORA: That’s right. That’s being where the users are.

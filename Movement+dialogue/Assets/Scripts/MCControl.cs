@@ -21,6 +21,7 @@ public class MCControl : MonoBehaviour {
     public Transform A5;
     public Transform B5;
     public Trigger trigger;
+    //public Conversation conv;
     //A1 <-> A2
     //B1 <-> A3
     //B2 <-> D3
@@ -37,7 +38,7 @@ public class MCControl : MonoBehaviour {
 	void Update () {
         float hmove = Input.GetAxis("Horizontal");
         float vmove = Input.GetAxis("Vertical");
-        if (trigger.getIsConversing()==0)
+        if (trigger.isConversing == 0)
             rg.velocity = new Vector2(hmove * Mspeed, vmove * Mspeed);
         else rg.Sleep();
         //area 1 moves

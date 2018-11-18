@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     string[] options;
     public bool playerTalking;
     public bool clickOnce = false;
+    public bool playerControl;
     List<Button> buttons = new List<Button>();
 
     public Text dialogueBox;
@@ -38,6 +39,7 @@ public class DialogueManager : MonoBehaviour
         transition = GameObject.Find("AnimPanel").GetComponent<Animator>();
         charAnimator = GameObject.Find("GamePanel").GetComponent<Animator>();
         lineNum = -1;
+        playerControl = true;
         //transition.SetTrigger("fadein");
     }
 
@@ -56,37 +58,39 @@ public class DialogueManager : MonoBehaviour
         {
             ClearButtons();
         }
-
-        if (!dialogueBox.GetComponent<AnimatedText>().done && !dialogueBox.GetComponent<AnimatedText>().cancel && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")))   //skips the dialogue
+        if (playerControl)
         {
-            /*
-            if (parser.GetName(lineNum + 1) != characterName && !charAnimator.GetBool("fadeout" + characterName) && (charAnimator.GetBool("idle" + characterName) || charAnimator.GetBool("fadein" + characterName)))
+            if (!dialogueBox.GetComponent<AnimatedText>().done && !dialogueBox.GetComponent<AnimatedText>().cancel && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")))   //skips the dialogue
             {
-             charAnimator.SetBool("fadeout" + characterName, true);
-             charAnimator.SetBool("idle" + characterName, false);
-             charAnimator.SetBool("fadein" + characterName, false);
-            }*/
-            //SetAnimation();
-            dialogueBox.GetComponent<AnimatedText>().cancel = true;
-            print("CANCELLING TEXT " + lineNum);
-        }
-
-        else if((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")) && playerTalking == false && dialogueBox.GetComponent<AnimatedText>().done)   //if dialogue is already skipped OR already done, go to next line
-        {
-            
-            if (parser.GetName(lineNum + 1) != characterName && !charAnimator.GetBool("fadeout" + characterName) && (charAnimator.GetBool("idle" + characterName) || charAnimator.GetBool("fadein" + characterName)))
-            {
-             charAnimator.SetBool("fadeout" + characterName, true);
-             charAnimator.SetBool("idle" + characterName, false);
-             charAnimator.SetBool("fadein" + characterName, false);
+                /*
+                if (parser.GetName(lineNum + 1) != characterName && !charAnimator.GetBool("fadeout" + characterName) && (charAnimator.GetBool("idle" + characterName) || charAnimator.GetBool("fadein" + characterName)))
+                {
+                 charAnimator.SetBool("fadeout" + characterName, true);
+                 charAnimator.SetBool("idle" + characterName, false);
+                 charAnimator.SetBool("fadein" + characterName, false);
+                }*/
+                //SetAnimation();
+                dialogueBox.GetComponent<AnimatedText>().cancel = true;
+                print("CANCELLING TEXT " + lineNum);
             }
-            //SetAnimation();
-            dialogueBox.GetComponent<AnimatedText>().cancel = false;
-            lineNum++;
-            ShowDialogue();
-            print("ACTION "+lineNum);
-            UpdateUI();
-            //SetAnimation();
+
+            else if (((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("return")) && playerTalking == false && dialogueBox.GetComponent<AnimatedText>().done))   //if dialogue is already skipped OR already done, go to next line
+            {
+
+                if (parser.GetName(lineNum) == characterName && !charAnimator.GetBool("fadeout" + characterName) && (charAnimator.GetBool("idle" + characterName) || charAnimator.GetBool("fadein" + characterName)))
+                {
+                    charAnimator.SetBool("fadeout" + characterName, true);
+                    charAnimator.SetBool("idle" + characterName, false);
+                    charAnimator.SetBool("fadein" + characterName, false);
+                }
+                //SetAnimation();
+                dialogueBox.GetComponent<AnimatedText>().cancel = false;
+                lineNum++;
+                ShowDialogue();
+                print("ACTION " + lineNum);
+                UpdateUI();
+                //SetAnimation();
+            }
         }
 
     }
@@ -137,9 +141,6 @@ public class DialogueManager : MonoBehaviour
                 //charAnimator.SetBool("idle" + characterName, false);
                 //charAnimator.SetBool("fadein" + characterName, false);
                 //charAnimator.SetBool("fadeout" + characterName, true);
-                lineNum++;
-                ShowDialogue();
-                UpdateUI();
             }
 
             else
@@ -270,11 +271,6 @@ public class DialogueManager : MonoBehaviour
             print("fadein " + characterName);
             //print("Animation playing: " + charAnimator.GetCurrentAnimatorStateInfo(0));
             StartCoroutine(WaitOneSecondChar());
-            if(parser.GetContent(lineNum) == "`loadchar")
-            {
-                charAnimator.SetBool("fadeout" + characterName, true);
-                print("fadeout " + characterName);
-            }
         }
         //else
         //{
@@ -290,30 +286,30 @@ public class DialogueManager : MonoBehaviour
 
         if (position == "L")
         {
-            spriteObj.transform.position = new Vector3(250, 280);
+            spriteObj.transform.position = new Vector3(250, 180);
         }
         else if (position == "R")
         {
-            spriteObj.transform.position = new Vector3(700, 280);
+            spriteObj.transform.position = new Vector3(700, 180);
         }
         else if (position == "M")
         {
-            spriteObj.transform.position = new Vector3(500, 280);
+            spriteObj.transform.position = new Vector3(500, 180);
         }
         else if (position == "LF")  //F == flip
         {
             currSprite.flipX = true;
-            spriteObj.transform.position = new Vector3(250, 280);
+            spriteObj.transform.position = new Vector3(250, 180);
         }
         else if (position == "RF")
         {
             currSprite.flipX = true;
-            spriteObj.transform.position = new Vector3(700, 280);
+            spriteObj.transform.position = new Vector3(700, 180);
         }
         else if (position == "MF")
         {
             currSprite.flipX = true;
-            spriteObj.transform.position = new Vector3(500, 280);
+            spriteObj.transform.position = new Vector3(500, 180);
         }
         spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
 
@@ -327,16 +323,38 @@ public class DialogueManager : MonoBehaviour
         GameObject bg = GameObject.Find("Background");
         Texture bgTexture = (Texture)bg.GetComponent<BackgroundScript>().bg[pose];
         Shader shader = Shader.Find("Unlit/Texture");
+        StartCoroutine(WaitAnimToFinish(bg, bgTexture));
         bg.GetComponent<Renderer>().material.shader = shader; 
-        bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
-        StartCoroutine(WaitAnimToFinish());
         playerTalking = true;
     }
 
-    IEnumerator WaitAnimToFinish()
+    IEnumerator WaitAnimToFinish(GameObject bg, Texture bgTexture)
     {
-        //print("linenum before " + lineNum);
-        yield return new WaitForSeconds(1);
+        if (clickOnce)
+        {
+            //playerControl = false;
+            transition.SetBool("fadeout", true);
+
+            yield return new WaitForSeconds(1);
+
+            transition.SetBool("fadeout", false);
+            yield return new WaitForSeconds(1.5f);
+            bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
+            transition.SetBool("fadein", true);
+
+            yield return new WaitForSeconds(1);
+
+            transition.SetBool("fadein", false);
+            yield return new WaitForSeconds(0.5f);
+            //playerControl = true;
+        }
+        else
+        {
+            //print("linenum before " + lineNum);
+            bg.GetComponent<Renderer>().material.mainTexture = bgTexture;
+            yield return new WaitForSeconds(1);
+        }
+
         //print("wait 1 sec");
         lineNum++;
         //print("linenum after " + lineNum);
@@ -353,24 +371,34 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator WaitAnimToFinishEnd()
     {
-        transition.SetTrigger("fadein");
-        yield return new WaitForSeconds(1);
+        transition.SetBool("fadeout", true);
+        yield return new WaitForSeconds(1.5f);
+        transition.SetBool("fadeout", false);
         SceneManager.LoadScene(0);
     }
 
     IEnumerator WaitOneSecondChar()
     {
-        //print("SUPPOSE TO SEE THIS ONCE");
-        if (!playerTalking)
+        //playerControl = false;
+        yield return new WaitForSeconds(1);
+        charAnimator.SetBool("fadein" + characterName, false);
+        yield return new WaitForSeconds(0.1f);
+        charAnimator.SetBool("idle" + characterName, true);
+        //playerControl = true;
+        print("Content " + parser.GetContent(lineNum));
+        if (parser.GetContent(lineNum) == "`loadchar")
         {
-            //playerTalking = true;
-            yield return new WaitForSeconds(1);
-            //playerTalking = false;
-        }
-
-        else
-        {
-            yield return new WaitForSeconds(1);
+            //playerControl = false;
+            yield return new WaitForSeconds(0.1f);
+            charAnimator.SetBool("idle" + characterName, false);
+            yield return new WaitForSeconds(0.1f);
+            charAnimator.SetBool("fadeout" + characterName, true);
+            print("fadeout " + characterName);
+            lineNum++;
+            ShowDialogue();
+            UpdateUI();
+            //playerControl = true;
         }
     }
+
 }

@@ -61,9 +61,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MiniMapScript.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\MCControl.cs" />
+    <Compile Include="Assets\Scripts\ObjectiveController.cs" />
     <Compile Include="Assets\Scripts\Trigger.cs" />
+    <Compile Include="Assets\Scripts\TriggerNPC.cs" />
+    <Compile Include="Assets\Scripts\TriggerObject.cs" />
+    <Compile Include="Assets\Scripts\UIObjController.cs" />
     <Compile Include="Assets\VisualNovel\Scripts\AnimatedText.cs" />
     <Compile Include="Assets\VisualNovel\Scripts\BackgroundScript.cs" />
     <Compile Include="Assets\VisualNovel\Scripts\Character.cs" />
@@ -72,8 +78,11 @@
     <Compile Include="Assets\VisualNovel\Scripts\DialogueParser.cs" />
     <None Include="Assets\Dialogue.txt" />
     <None Include="Assets\Dialogue4.txt" />
+    <None Include="Assets\Dialogue5.txt" />
+    <None Include="Assets\Dialogue6.txt" />
     <None Include="Assets\Dialogue2.txt" />
     <None Include="Assets\Dialogue3.txt" />
+    <None Include="Assets\Dialogue7.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/James Rosales/Documents/GitHub/Doki-Doki-Software-Club/Movement+dialogue/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
