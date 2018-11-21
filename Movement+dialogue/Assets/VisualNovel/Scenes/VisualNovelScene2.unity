@@ -351,7 +351,7 @@ Prefab:
     - target: {fileID: 224553455988511802, guid: b9b60580532cb8246b31d710b50a7d14,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -183.56232
+      value: 223.7819
       objectReference: {fileID: 0}
     - target: {fileID: 224553455988511802, guid: b9b60580532cb8246b31d710b50a7d14,
         type: 2}
@@ -397,26 +397,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 212753797690127082, guid: b9b60580532cb8246b31d710b50a7d14,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212753797690127082, guid: b9b60580532cb8246b31d710b50a7d14,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212753797690127082, guid: b9b60580532cb8246b31d710b50a7d14,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212753797690127082, guid: b9b60580532cb8246b31d710b50a7d14,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9b60580532cb8246b31d710b50a7d14, type: 2}
@@ -517,6 +497,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262025825723372, guid: 9214f537d962d2a44ab0ab067b093f0d, type: 2}
+      propertyPath: m_Name
+      value: EdRA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9214f537d962d2a44ab0ab067b093f0d, type: 2}

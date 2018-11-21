@@ -82,7 +82,9 @@
     <None Include="Assets\Dialogue6.txt" />
     <None Include="Assets\Dialogue2.txt" />
     <None Include="Assets\Dialogue3.txt" />
+    <None Include="Assets\Dialogue9.txt" />
     <None Include="Assets\Dialogue7.txt" />
+    <None Include="Assets\Dialogue8.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/James Rosales/Documents/GitHub/Doki-Doki-Software-Club/Movement+dialogue/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
