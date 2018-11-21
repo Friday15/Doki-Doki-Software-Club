@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     string[] options;
     public bool playerTalking;
     public bool clickOnce = false;
+    public AudioController sound;
     List<Button> buttons = new List<Button>();
 
     public Text dialogueBox;
@@ -80,12 +81,14 @@ public class DialogueManager : MonoBehaviour
              charAnimator.SetBool("idle" + characterName, false);
              charAnimator.SetBool("fadein" + characterName, false);
             }
+            sound.PlaySound();
             //SetAnimation();
             dialogueBox.GetComponent<AnimatedText>().cancel = false;
             lineNum++;
             ShowDialogue();
             print("ACTION "+lineNum);
             UpdateUI();
+            
             //SetAnimation();
         }
 
