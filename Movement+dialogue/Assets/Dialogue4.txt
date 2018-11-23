@@ -11,11 +11,22 @@ ASRA;Here is how: ASRA teaches the student how to search following the instructi
 ASRA;There are databases in the library that anyone with access can search regardless of degree program.;0;R
 ASRA;Examples are EBSCO, JSTOR, and PROQUEST.;0;R
 ASRA;What do you call these databases? ASSUME ANSWER IS MULTIDISCIPLINARY FOR NOW*;0;R
-Player;Subject-specific databases:line,14;Statistical databases:line,14;Multidisciplinary databases:line,16;Bibliographic databases:line,14
-RIA;"Nah ah! That's not the one . . . " and proceeds with an explanation what the choice is about.;0;L
+Player;Subject-specific databases:line,14;Statistical databases:line,17;Multidisciplinary databases:line,25;Bibliographic databases:line,21
+RIA;Nah ah! That's not the one . . .;0;L
+RIA;Subject-specific databases provide highly detailed research information on a particular topic.;0;L
 Player;`jump;13
-ASRA;ASRA will acknowledge the correct answer and give the item. "Well done! Have my netbook."";0;R
-Player;Thank you, ASRA. I am now ready to do my term papers!:line,18
+RIA;Nah ah! That's not the one . . .;0;L
+RIA;Statistical databases contains statistical data such as;0;L
+RIA; counts and averages and are commonly used in generating reports.;0;L
+Player;`jump;13
+RIA;Nah ah! That's not the one . . .;0;L
+RIA;Bibliographic databases contains descriptive record of books, periodical articles,;0;L
+RIA; conference proceedings and audiovisual materials.;0;L
+Player;`jump;13
+ASRA;Well done! Multidisciplinary databases cover a wide range of academic subjects including;0;R
+ASRA; the arts, health care, business, literature, law, sciences, and more from journals, newspapers, magazines, ebooks, and reports;0;R
+ASRA;Have my netbook.;0;R
+Player;Thank you, ASRA. I am now ready to do my term papers!:line,29
 ASRA;You're welcome. Hope you've enjoyed it.;0;R
 RIA;Thanks for the time ASRA. We'll head on to SciTRA now.;0;L
 Player;`clear;;ASRA

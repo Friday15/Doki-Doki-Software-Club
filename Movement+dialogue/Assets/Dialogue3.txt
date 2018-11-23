@@ -7,10 +7,15 @@ ArRA;and other members of the academic community such as theses, dissertations, 
 ArRA;In short, an institutional memory!;0;R
 Player;Ohhhh. So my thesis will go here? :line,8
 ArRA;Absolutely! Do you know what type of library materials are they?;0;R
-Player;Both Primary and Secondary Sources:line,12;Tertiary Sources:line,10;Secondary Sources:line,10;Primary Sources:line,10
-RIA;Nah ah! That's not the one...and proceeds with an explanation what the choice is about.;0;L
+Player;Both Primary and Secondary Sources:line,10;Tertiary Sources:line,13;Secondary Sources:line,16;Primary Sources:line,10
+RIA;Nah ah! That's not the one...;0;L
+RIA;Primary sources are first hand authoritative accounts of events, topic, historical periods.;0;L
 Player;`jump;9
-ArRA;ArRA, will acknowledge the correct answer and give the item. "Excellent! Here is my scroll.";0;R
+RIA;Nah ah! That's not the one...;0;L
+RIA;Tertiary sources identify and locate primary and secondary sources.;0;L
+Player;`jump;9
+ArRA;Excellent! Secondary sources interpret, critique and analyze primary sources.;0;R
+ArRA;Here is my scroll.;0;R
 ArRA;ASRA is nearby too. You may visit her now.;0;R
 RIA;Bye ArRA! Nice seeing you again. 'Til next time.;0;L
 Player;`clear;;ArRA
