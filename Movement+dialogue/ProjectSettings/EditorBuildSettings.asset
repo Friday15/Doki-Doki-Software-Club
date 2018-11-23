@@ -17,4 +17,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VisualNovel/Scenes/VisualNovelScene4.unity
     guid: ffbf076e41231384689a1d4172fdd0cb
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene5.unity
+    guid: 30e32931ce4753947befa54bdebee9e1
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene6.unity
+    guid: 939913968277c5d44b8bf1470d05219a
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene7.unity
+    guid: 2b8200dc29472c144b7f52827465c321
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene8.unity
+    guid: d0e43a0ae49ce624293337836385b506
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene9.unity
+    guid: 65e809f08fb64274cbcb247f2bb3ec25
   m_configObjects: {}

@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 1570
+  controlID: 1958
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1571
+  controlID: 1959
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 1572
+  controlID: 1960
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,9 +369,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b63d0000
-    m_LastClickedID: 15798
-    m_ExpandedIDs: 3c9effff32aaffffb8abffff08adffff2aaeffffeeb2ffffb2f6ffff00000000343e00001c3f0000
+    m_SelectedIDs: d22e0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: ce4fffff365bffff6660ffff7863ffff9864ffff9266ffff2c6affff766dffffb26effffa672ffff1afbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -421,14 +421,14 @@ MonoBehaviour:
     height: 440
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1117.4267686504545
+  lastFramingTime: 1866.7472278540422
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.825608, y: 0.6435708, z: -9.954364}
+    m_Target: {x: 537.4124, y: 251.1454, z: -803.4667}
     speed: 2
-    m_Value: {x: 4.825608, y: 0.6435708, z: -9.954364}
+    m_Value: {x: 537.4124, y: 251.1454, z: -803.4667}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -460,9 +460,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 17.428783
+    m_Target: 368.38712
     speed: 2
-    m_Value: 17.428783
+    m_Value: 368.38712
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -618,14 +618,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: S:\sofengg\Doki-Doki-Software-Club-Mart-Branch\Movement+dialogue
+  m_LastProjectPath: C:\Users\Acer\Documents\GitHub\Doki-Doki-Software-Club\Movement+dialogue
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 64}
-    m_SelectedIDs: 3c2f0000
-    m_LastClickedID: 12092
-    m_ExpandedIDs: 00000000102f00001e2f0000202f00001034000000ca9a3b
+    m_SelectedIDs: fe2b0000
+    m_LastClickedID: 11262
+    m_ExpandedIDs: 00000000c22b0000d82b0000da2b0000d631000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -653,7 +653,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000102f00001e2f0000202f00001034000000ca9a3b
+    m_ExpandedIDs: 00000000c22b0000d82b0000da2b0000d631000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
