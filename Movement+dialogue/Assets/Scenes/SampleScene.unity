@@ -1028,8 +1028,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Chapter 1\nLibrary Newbie\nblah blah blah story\nblah blah blah story\nblah
-    blah i want to\ndie blah blah blah blah \nblah blah blah blah"
+  m_Text: 'Chapter 1
+
+    Library Newbie
+
+    You new to the library, you have been introduced to the library assistants to
+    learn more about the library.'
 --- !u!222 &438777984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3146,6 +3150,7 @@ MonoBehaviour:
   animatedText: {fileID: 0}
   transition: {fileID: 0}
   charAnimator: {fileID: 0}
+  Sound: {fileID: 0}
 --- !u!1 &1361642828
 GameObject:
   m_ObjectHideFlags: 0

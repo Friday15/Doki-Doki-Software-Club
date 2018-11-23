@@ -25,6 +25,7 @@ public class DialogueManager : MonoBehaviour
     public AnimatedText animatedText;
     public Animator transition;
     public Animator charAnimator;
+    public AudioController Sound;
 
     // Use this for initialization
     void Start()
@@ -83,6 +84,7 @@ public class DialogueManager : MonoBehaviour
                     charAnimator.SetBool("idle" + characterName, false);
                     charAnimator.SetBool("fadein" + characterName, false);
                 }
+                Sound.PlaySound();
                 //SetAnimation();
                 dialogueBox.GetComponent<AnimatedText>().cancel = false;
                 lineNum++;
