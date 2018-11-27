@@ -7,10 +7,21 @@ LORA; through email, chat, phone, text. Skype, Facebook and Twitter!;0;R
 LORA;On this floor, you will find reference books like dictionaries, handbooks, encyclopedias and many others.;0;R
 Player;Awesome!:line,8
 LORA;Now, what is the fastest way to get the location of these books in the library to find them?;0;R
-Player;Card catalog:line,10;Directories:line,10;Google:line,10;Online Public Access Catalog (OPAC):line,12
-RIA;Nah ah! That's not the one...and proceeds with an explanation what the choice is about.;0;L
+Player;Card catalog:lineWrong,10;Directories:lineWrong,13;Google:lineWrong,17;Online Public Access Catalog (OPAC):lineRight,21
+RIA;Nah ah! That's not the one...;0;L
+RIA;The card catalog used to be the fastest way to locate the books in the library when libraries are not automated yet.;0;L
 Player;`jump;8
-LORA;LORA, will acknowledge the correct answer and give the item. "Good job! Here is my smartphone. Keep going.";0;R
+RIA;Nah ah! That's not the one...;0;L
+RIA;The directory is a book or website listing names of individuals or organizations arranged;0;L
+RIA; alphabetically or thematically with the details such as addresses and telephone numbers.;0;L
+Player;`jump;8
+RIA;Nah ah! That's not the one...;0;L
+RIA;Google is a search engine which searches and retrieves results from the world wide web;0;L
+RIA; based on their contents and on how many other pages on the Web linked to them;0;L
+Player;`jump;8
+LORA;Good job! The OPAC list down books available in the library;0;R
+LORA; along with their bibliographic details and location for faster retrieval.;0;R
+LORA;Here is my smartphone. Keep going.;0;R
 LORA;Other than books, we also have theses, dissertations and faculty publications. You may ask ArRA how to locate them.;0;R
 Player;`clear;;LORA
 Player;`clear;;RIA
