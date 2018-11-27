@@ -7,7 +7,7 @@ ArRA;and other members of the academic community such as theses, dissertations, 
 ArRA;In short, an institutional memory!;0;R
 Player;Ohhhh. So my thesis will go here? :line,8
 ArRA;Absolutely! Do you know what type of library materials are they?;0;R
-Player;Both Primary and Secondary Sources:line,10;Tertiary Sources:line,13;Secondary Sources:line,16;Primary Sources:line,10
+Player;Both Primary and Secondary Sources:lineWrong,10;Tertiary Sources:lineWrong,13;Secondary Sources:lineRight,16;Primary Sources:lineWrong,10
 RIA;Nah ah! That's not the one...;0;L
 RIA;Primary sources are first hand authoritative accounts of events, topic, historical periods.;0;L
 Player;`jump;9

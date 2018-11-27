@@ -515,6 +515,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1988071046466534, guid: ebce0ffcc0ae0d44c82c806136015710,
     type: 2}
   m_PrefabInternal: {fileID: 1138815931}
+--- !u!114 &458033831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+    type: 2}
+  m_PrefabInternal: {fileID: 1138815931}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!224 &458033834 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224076065659917222, guid: ebce0ffcc0ae0d44c82c806136015710,
@@ -1036,6 +1042,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1858657906}
     m_Modifications:
+    - target: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224076065659917222, guid: ebce0ffcc0ae0d44c82c806136015710,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1135,6 +1146,31 @@ Prefab:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Button, UnityEngine.UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114915345517859182, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 458033831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebce0ffcc0ae0d44c82c806136015710, type: 2}
   m_IsPrefabAsset: 0
@@ -1172,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30.599976, y: -3.5000038}
+  m_AnchoredPosition: {x: -30.599976, y: -3.5}
   m_SizeDelta: {x: -143.5, y: -36.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143150633

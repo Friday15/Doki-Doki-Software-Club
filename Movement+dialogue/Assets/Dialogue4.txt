@@ -11,7 +11,7 @@ ASRA;Here is how: ASRA teaches the student how to search following the instructi
 ASRA;There are databases in the library that anyone with access can search regardless of degree program.;0;R
 ASRA;Examples are EBSCO, JSTOR, and PROQUEST.;0;R
 ASRA;What do you call these databases? ASSUME ANSWER IS MULTIDISCIPLINARY FOR NOW*;0;R
-Player;Subject-specific databases:line,14;Statistical databases:line,17;Multidisciplinary databases:line,25;Bibliographic databases:line,21
+Player;Subject-specific databases:lineWrong,14;Statistical databases:lineWrong,17;Multidisciplinary databases:lineRight,25;Bibliographic databases:lineWrong,21
 RIA;Nah ah! That's not the one . . .;0;L
 RIA;Subject-specific databases provide highly detailed research information on a particular topic.;0;L
 Player;`jump;13

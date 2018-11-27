@@ -7,7 +7,7 @@ LORA; through email, chat, phone, text. Skype, Facebook and Twitter!;0;R
 LORA;On this floor, you will find reference books like dictionaries, handbooks, encyclopedias and many others.;0;R
 Player;Awesome!:line,8
 LORA;Now, what is the fastest way to get the location of these books in the library to find them?;0;R
-Player;Card catalog:line,10;Directories:line,13;Google:line,17;Online Public Access Catalog (OPAC):line,21
+Player;Card catalog:lineWrong,10;Directories:lineWrong,13;Google:lineWrong,17;Online Public Access Catalog (OPAC):lineRight,21
 RIA;Nah ah! That's not the one...;0;L
 RIA;The card catalog used to be the fastest way to locate the books in the library when libraries are not automated yet.;0;L
 Player;`jump;8

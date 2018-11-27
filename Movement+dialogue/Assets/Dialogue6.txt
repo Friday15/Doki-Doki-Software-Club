@@ -11,7 +11,7 @@ Player;Hi KIRA, it's nice to meet you too. I am looking for additional resources
 KIRA;Great! I can help you with that.;0;R
 KIRA;But remember, you cannot use all websites related to your topic, you must first evaluate if the website is authoritative.;0;R
 KIRA;To do that what question should you ask yourself?;0;R
-Player;Is the author/ organization recognized in the field of your topic?:line,23;Does the information answer your research question?:line,14;Are sources listed so that they can be verified if necessary?:line,17;Do the author/s made his/ their intentions clear?:line,20
+Player;Is the author/ organization recognized in the field of your topic?:lineRight,23;Does the information answer your research question?:lineWrong,14;Are sources listed so that they can be verified if necessary?:lineWrong,17;Do the author/s made his/ their intentions clear?:lineWrong,20
 RIA;Nah ah! That's not the one...;0;L
 RIA;That's a question for relevance.;0;L
 Player;`jump;12

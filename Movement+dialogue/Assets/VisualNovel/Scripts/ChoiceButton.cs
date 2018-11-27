@@ -31,14 +31,14 @@ public class ChoiceButton : MonoBehaviour
         this.option = newOption;
     }
 
-    public void ParseOption()
+    public void ParseOption(Button button)
     {
         string command = option.Split(',')[0];
         string commandModifier = option.Split(',')[1];
-        if (command == "line")
+        if (command == "lineRight" || command == "lineWrong" || command == "line")
         {
             StopAllCoroutines();
-            StartCoroutine(waitOneSecond(commandModifier));
+            StartCoroutine(waitOneSecond(command, commandModifier, button));
         }
         else if (command == "scene")
         {
@@ -46,12 +46,20 @@ public class ChoiceButton : MonoBehaviour
             Application.LoadLevel("Scene" + commandModifier);
         }
     }
-    IEnumerator waitOneSecond(string commandModifier)
+    IEnumerator waitOneSecond(string command, string commandModifier, Button button)
     {
-        animator.SetBool("wrongButton", false);
-        animator.SetBool("correctButton", true);
-        yield return new WaitForSeconds(2);
-        animator.SetBool("correctButton", false);
+        if (command == "lineRight")
+        {
+            button.GetComponent<Image>().color = Color.green;
+        }
+        else if (command == "lineWrong")
+        {
+            button.GetComponent<Image>().color = Color.red;           
+        }
+        yield return new WaitForSeconds(0.3f);
+        //animator.SetBool("wrongButton", false);
+        //animator.SetBool("correctButton", true);      
+        //animator.SetBool("correctButton", false);
         box.playerTalking = false;
         box.lineNum = int.Parse(commandModifier);
         print(box.lineNum + " CHOICE BUTTON");

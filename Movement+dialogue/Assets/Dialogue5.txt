@@ -21,7 +21,7 @@ SciTRA;In that case, let's see if that's the right source for your topic.;0;R
 SciTRA;*something happens. the script is incomplete*;0;R
 Player;Oh, now I get it!:line,22
 SciTRA;Well then, which of the following questions should you ask yourself when you check the relevance of an information source?;0;R
-Player;Is the author an established expert in the field?:line,24;Is the source free of bias?:line,27;Does the source add something new to your knowledge of the topic?:line,33;Was the source published in the past five years?:line,30
+Player;Is the author an established expert in the field?:lineWrong,24;Is the source free of bias?:lineWrong,27;Does the source add something new to your knowledge of the topic?:lineRight,33;Was the source published in the past five years?:lineWrong,30
 RIA;Nah ah! That's not the one . . .;0;L
 RIA;That's a question for authority;0;L
 Player;`jump;22
