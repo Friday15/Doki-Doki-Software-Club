@@ -25,6 +25,8 @@ public class DialogueManager : MonoBehaviour
     public AnimatedText animatedText;
     public Animator transition;
     public Animator charAnimator;
+    public AudioController Sound;
+    public GameObject thingy;
 
     // Use this for initialization
     void Start()
@@ -38,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         animatedText = GameObject.Find("TextBox").GetComponent<AnimatedText>();
         transition = GameObject.Find("AnimPanel").GetComponent<Animator>();
         charAnimator = GameObject.Find("GamePanel").GetComponent<Animator>();
+        thingy = GameObject.Find("thingy");
         lineNum = -1;
         playerControl = true;
         //transition.SetTrigger("fadein");
@@ -53,6 +56,8 @@ public class DialogueManager : MonoBehaviour
             print("CLICKONCE "+lineNum);
             UpdateUI();
             clickOnce = true;
+            thingy.SetActive(false);
+            charAnimator.SetBool("stopIndicator", true);
         }
         if (!playerTalking)
         {
@@ -83,12 +88,17 @@ public class DialogueManager : MonoBehaviour
                     charAnimator.SetBool("idle" + characterName, false);
                     charAnimator.SetBool("fadein" + characterName, false);
                 }
+                Sound.PlaySound();
                 //SetAnimation();
                 dialogueBox.GetComponent<AnimatedText>().cancel = false;
+                //thingy.SetActive(false);
                 lineNum++;
                 ShowDialogue();
                 print("ACTION " + lineNum);
                 UpdateUI();
+                thingy.SetActive(false);
+                charAnimator.SetBool("startIndicator", false);
+                charAnimator.SetBool("stopIndicator", true);
                 //SetAnimation();
             }
         }
@@ -210,10 +220,13 @@ public class DialogueManager : MonoBehaviour
             cb.SetText(options[i].Split(':')[0]);
             cb.option = options[i].Split(':')[1];
             cb.box = this;
-            b.transform.SetParent(this.transform);
+            b.transform.SetParent(GameObject.Find("GamePanel").transform);
             b.transform.localPosition = new Vector3(0, -25 + (i * 50));
             b.transform.localScale = new Vector3(1, 1, 1);
             buttons.Add(b);
+            thingy.SetActive(false);
+            charAnimator.SetBool("startIndicator", false);
+            charAnimator.SetBool("stopIndicator", true);
         }
         if (playerTalking)
         {

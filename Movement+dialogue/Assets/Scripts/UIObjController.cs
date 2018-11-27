@@ -6,10 +6,13 @@ using UnityEngine.EventSystems;
 public class UIObjController : MonoBehaviour, IPointerClickHandler{
     public Canvas Obj;
     public Canvas Myself;
+    public AudioController Sound;
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        
         Myself.gameObject.SetActive(false);
+        Sound.PlayNotes();
         Obj.gameObject.SetActive(true);
     }
     // Use this for initialization
@@ -21,7 +24,9 @@ public class UIObjController : MonoBehaviour, IPointerClickHandler{
 	void Update () {
         if (Input.GetKeyDown(KeyCode.C))
         {
+            
             Myself.gameObject.SetActive(false);
+            Sound.PlayNotes();
             Obj.gameObject.SetActive(true);
         }
     }

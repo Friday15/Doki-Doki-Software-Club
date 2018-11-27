@@ -13,20 +13,16 @@ public class AnimatedText : MonoBehaviour
 
     public bool done = false;
     public bool cancel = false;
-    /*
+    public GameObject thingy;
+    public Animator animator;
+    
     // Use this for initialization
     void Start()
     {
-        //Get text component
-        textComp = GetComponent<Text>();
-        //Message will display will be at Text
-        message = textComp.text;
-        //Set the text to be blank first
-        textComp.text = "";
-        //Call the function and expect yield to return
-        StartCoroutine(TypeText());
+        thingy = GameObject.Find("thingy");
+        animator = GameObject.Find("GamePanel").GetComponent<Animator>();
     }
-    */
+    
 
     public void startAnim()
     {
@@ -70,7 +66,10 @@ public class AnimatedText : MonoBehaviour
         done = true;
         //cancel = true;
         textComp.text = message;
-        //print("SHOULD PRINT AFTER STOPPING??");
+        print("SHOULD PRINT AFTER STOPPING??");
+        thingy.SetActive(true);
+        animator.SetBool("stopIndicator", false);
+        animator.SetBool("startIndicator", true);
     }
 
 }
