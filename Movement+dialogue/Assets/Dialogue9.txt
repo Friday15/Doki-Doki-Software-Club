@@ -1,0 +1,30 @@
+Player;`background;0
+RIA;We are now on your last stop, (Player). We are in the Law Library in BGC;0;L
+RIA; and i want you to meet LERA, she's the Legal Education Reference Assistant.;0;L
+LERA;(Approaching) Hi (Player). I believe this is your last task;0;R
+LERA; which is about treating and applying information ethically.;0;R
+Player;Is there such a thing as treating and applying information ethically? How do I do that?:line,6
+LERA;Are you familiar with plagiarism, copyright, fair use, and public domain?;0;R
+Player;Not so much. Can you expound on them?:line,8
+LERA;First, you have to avoid committing plagiarism, and I know that you already know how to do that.;0;R
+Player;Yes, cite your sources correctly.:line,10
+LERA;Good. But do you know that we have a software, which can help us prevent plagiarism?;0;R
+Player;Yes, I've heard about that. It's Turnitin. It matches your paper to the open internet, online databases and other student submitted papers.:line,12
+LERA;That's right. Now, there's copyright. It's Copying, performing publishing, or;0;R
+LERA; distributing someone else's work without their permission, especially if it prevents them from;0;R
+LERA; earning and being recognized for their work.;0;R
+LERA;However, using a small portion of a work for scholarship or criticism is generally seen as fair use;0;R
+LERA;and does not require getting permission from the copyright holder.;0;R
+LERA;But copyrights do expire. Current laws extend copyright protection for the life of the author;0;R
+LERA; plus 70 years.;0;R
+Player;Ohhhh, now I know. I've learned so much from you LERA. Thank you very much.:line,20
+LERA;Don't thank me yet as you still need to complete your final task.;0;R
+LERA;Going back to plagiarism, match the type of plagiarism to its description;0;R
+LERA;*GAME WILL START*;0;R
+LERA;Perfect, here's the gavel.;0;R
+Player;Thank you, LERA. I really learned so much today:line,25
+LERA;You're welcome.;0;R
+RIA;Thanks LERA;0;L
+Player;`clear;;LERA
+Player;`clear;;RIA
+Player;`end
