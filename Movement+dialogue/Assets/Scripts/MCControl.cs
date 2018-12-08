@@ -31,7 +31,7 @@ public class MCControl : MonoBehaviour {
     //D4 <-> B5 
     // Use this for initialization
     void Start () {
-		
+        print(PlayerPrefs.GetString("test") + " REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
 	}
 	
 	// Update is called once per frame

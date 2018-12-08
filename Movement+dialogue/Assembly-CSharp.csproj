@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Mini1\ClickEvent.cs" />
+    <Compile Include="Assets\Mini1\FinishClick.cs" />
+    <Compile Include="Assets\Mini1\Reset.cs" />
     <Compile Include="Assets\MiniMapScript.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />

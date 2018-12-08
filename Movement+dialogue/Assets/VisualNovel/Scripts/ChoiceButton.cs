@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class ChoiceButton : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class ChoiceButton : MonoBehaviour
     public string option;
     public DialogueManager box;
     public Animator animator;
+    public int number;
 
     // Use this for initialization
     void Start()
@@ -43,11 +46,18 @@ public class ChoiceButton : MonoBehaviour
         else if (command == "scene")
         {
             box.playerTalking = false;
-            Application.LoadLevel("Scene" + commandModifier);
+            box.StartCoroutine(box.FadeoutMiniGame(Convert.ToInt32(commandModifier)));
         }
+    }
+
+    public void selectButton(Button button)
+    {
+        button.Select();
+        box.buttonSelect = number;
     }
     IEnumerator waitOneSecond(string command, string commandModifier, Button button)
     {
+        
         if (command == "lineRight")
         {
             button.GetComponent<Image>().color = Color.green;
@@ -56,7 +66,9 @@ public class ChoiceButton : MonoBehaviour
         {
             button.GetComponent<Image>().color = Color.red;           
         }
-        yield return new WaitForSeconds(0.3f);
+        
+
+        yield return new WaitForSeconds(0.5f);
         //animator.SetBool("wrongButton", false);
         //animator.SetBool("correctButton", true);      
         //animator.SetBool("correctButton", false);
