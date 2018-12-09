@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Text.RegularExpressions;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class AnimatedText : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class AnimatedText : MonoBehaviour
     //Text for the message to display
     public Text textComp;
 
+    public int index;
+    string regularString = "";
     public bool done = false;
     public bool cancel = false;
     public GameObject thingy;
@@ -21,6 +24,7 @@ public class AnimatedText : MonoBehaviour
     {
         thingy = GameObject.Find("thingy");
         animator = GameObject.Find("GamePanel").GetComponent<Animator>();
+        index = 0;
     }
     
 
@@ -50,6 +54,46 @@ public class AnimatedText : MonoBehaviour
         //print("THIS SHOULD BE WORKING REEEE");
     }
 
+    public bool checkWrap(string m, int i)
+    {
+        string nextWord = getNextWord(i);
+        TextGenerationSettings generationSettings = textComp.GetGenerationSettings(textComp.rectTransform.rect.size);
+        float originalHeight = textComp.cachedTextGeneratorForLayout.GetPreferredHeight(m, generationSettings);
+        float newHeight = textComp.cachedTextGeneratorForLayout.GetPreferredHeight(m + " " + nextWord, generationSettings);
+
+        print("INCOMPLETE MESSAGE     " + m);
+        print("INDEX     " + i);
+        print("MESSAGE + NEXTWORD       " + m + " " + nextWord);
+
+        if (newHeight > originalHeight)
+        {
+            return true;
+        }        
+
+        return false;
+    }
+
+    public string getNextWord(int index)
+    {
+        char[] tempArray = message.ToCharArray();
+        string nextWord = "";
+
+        for(int i = this.index + 1; i < tempArray.Length; i++)
+        {
+            if (!char.IsWhiteSpace(tempArray[i]))
+            {
+                print("tempArray in getNextWord()    " + tempArray[i]);
+                nextWord += tempArray[i];
+            }
+            else
+            {
+                print("NEXTWORD   " + nextWord);
+                return nextWord;
+            }
+        }
+
+        return nextWord;
+    }
     IEnumerator TypeText()
     {
         //Split each char into a char array
@@ -57,19 +101,32 @@ public class AnimatedText : MonoBehaviour
         {
             if (cancel)
                 break;
-
-            //Add 1 letter each
-            textComp.text += letter;
+            regularString += letter;
+            string removeWhiteSpace = Regex.Replace(textComp.text, @"\t|\n|\r", " ");
+            if (char.IsWhiteSpace(letter) && checkWrap(removeWhiteSpace, index))
+            {
+                print("UNWRAPPED");
+                textComp.text += "\n";
+                index++;
+            }
+            else
+            {
+                //Add 1 letter each
+                textComp.text += letter;
+                index++;
+            }
             yield return 0;
             yield return new WaitForSeconds(letterPaused);
         }
         done = true;
         //cancel = true;
         textComp.text = message;
-        print("SHOULD PRINT AFTER STOPPING??");
+        print("MESSAGE COMPLETE");
         thingy.SetActive(true);
         animator.SetBool("stopIndicator", false);
         animator.SetBool("startIndicator", true);
+        index = 0;
+        regularString = "";
     }
 
 }

@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
 
     DialogueParser parser;
 
-    public string dialogue, characterName;
+    public string dialogue, characterName, playerName;
     public int lineNum;
     public int pose, buttonSelect;
     string position;
@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     public bool clickOnce = false;
     public bool playerControl;
     public bool doneButton;
+    public bool preLoadChar;
     List<Button> buttons = new List<Button>();
 
     public Text dialogueBox;
@@ -43,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         charAnimator = GameObject.Find("GamePanel").GetComponent<Animator>();
         thingy = GameObject.Find("thingy");
         lineNum = -1;
+        playerName = "Yukino";
     }
 
     // Update is called once per frame
@@ -60,6 +62,7 @@ public class DialogueManager : MonoBehaviour
                 position = parser.GetPosition(1);
                 lineNum = 1;
                 print(parser.GetContent(lineNum));
+                preLoadChar = true;
                 DisplayImages();
 
                 print(PlayerPrefs.GetInt("lineNum") + "    REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
@@ -84,42 +87,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            if (buttons.Count != 1)
-            {
-                /*
-                if (Input.GetKeyUp(KeyCode.DownArrow) && doneButton)
-                {
-                    if(buttonSelect == 0)
-                        buttonSelect = 3;
-                        
-                    else if(buttonSelect > 0)
-                        buttonSelect--;
-
-                    doneButton = false;
-                    buttons[buttonSelect].Select();
-                }
-
-                else if (Input.GetKeyUp(KeyCode.UpArrow) && doneButton)
-                {
-                    if (buttonSelect == 3)
-                        buttonSelect = 0;
-
-                    else if (buttonSelect < 3)
-                        buttonSelect++;
-
-                    doneButton = false;
-                    buttons[buttonSelect].Select();
-                }
-
-                if(Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
-                {
-                    doneButton = true;
-                    print("done");
-                }
-                //print(buttonSelect);
-                */
-            }
-            else
+            if(buttons.Count == 1)
             {
                 buttons[0].Select();
             }
@@ -163,10 +131,23 @@ public class DialogueManager : MonoBehaviour
     public void UpdateUI()
     {
         if(parser.GetContent(lineNum) != "`loadchar"){
+            if (dialogue.Contains("(Player)"))
+                dialogue = PutPlayerName(dialogue);
+
             dialogueBox.text = dialogue;
             dialogueBox.GetComponent<AnimatedText>().startAnim();
             nameBox.text = characterName;
         }
+    }
+
+    public string PutPlayerName(string text)
+    {
+        if (text.Contains("(Player)"))
+        {
+            text = text.Replace("(Player)", playerName);
+            print("REPLACED " + text);
+        }
+        return text;
     }
 
     void ClearButtons()
@@ -267,16 +248,19 @@ public class DialogueManager : MonoBehaviour
             GameObject button = (GameObject)Instantiate(choiceBox);
             Button b = button.GetComponent<Button>();
             ChoiceButton cb = button.GetComponent<ChoiceButton>();
-            cb.SetText(options[i].Split(':')[0]);
+            if ((options[i].Split(':')[0]).Contains("(Player)"))
+                cb.SetText(PutPlayerName(options[i].Split(':')[0]));
+            else
+                cb.SetText(options[i].Split(':')[0]);
             cb.option = options[i].Split(':')[1];
             cb.number = i;
             cb.box = this;
             ColorBlock block = b.colors;
 
             if ((cb.option.Split(',')[0]) == "lineRight")
-                block.pressedColor = Color.green;
+                block.pressedColor = new Color32(113, 247, 159, 255);
             else if ((cb.option.Split(',')[0]) == "lineWrong")
-                block.pressedColor = Color.red;
+                block.pressedColor = new Color32(213, 87, 59, 255);
             if ((cb.option.Split(',')[0]) == "scene")
                 miniGame();
 
@@ -451,7 +435,7 @@ public class DialogueManager : MonoBehaviour
         charAnimator.SetBool("idle" + characterName, true);
         //playerControl = true;
         print("Content " + parser.GetContent(lineNum));
-        if (parser.GetContent(lineNum) == "`loadchar")
+        if (parser.GetContent(lineNum) == "`loadchar" || preLoadChar)
         {
             print("THIS SHOULD PRINT");
             yield return new WaitForSeconds(0.1f);
@@ -460,7 +444,10 @@ public class DialogueManager : MonoBehaviour
             charAnimator.SetBool("fadeout" + characterName, true);
             print("fadeout " + characterName);
             if (PlayerPrefs.HasKey("lineNum"))
+            {
+                preLoadChar = false;
                 lineNum = PlayerPrefs.GetInt("lineNum");
+            }
             else
             {
                 lineNum++;

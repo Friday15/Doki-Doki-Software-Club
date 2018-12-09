@@ -11,14 +11,13 @@ CORA;If you did, why aren't there any citations?;0;R
 Player;Cite... what?:line,11
 CORA;Citation. It is what you do to if you used the idea or words of other persons for your paper.;0;R
 CORA;It is giving credit to where it's due.;0;R
-RIA;But aside from acknowledging your source, did you know that citing strengthens your argument;0;L
-RIA; because your readers will know that your information are verified.;0;L
+RIA;But aside from acknowledging your source, citing strengthens your argument because your readers will know that your information are verified.;0;L
 RIA;Then, your citation will lead your readers to your sources.;0;L
-Player;That's how important citation is? I should put citations in my paper then.:line,17
+Player;That's how important citation is? I should put citations in my paper then.:line,16
 CORA;Yes, can put a check mark on the line before each instance when you need to cite and x when you don't need to.;0;R
 Player;Start Game:scene,9
-CORA;CORA, will acknowledge the correct answer and give the item. Great! Here's the attache case.;0;R
-Player;Thank you, CORA. I promise to cite the sources I will be using in my paper.:line,21
+CORA;Great! Here's the attache case.;0;R
+Player;Thank you, CORA. I promise to cite the sources I will be using in my paper.:line,20
 CORA;You're welcome.;0;R
 RIA;Thanks CORA. It's time to see EdRA now.;0;L
 Player;`clear;;CORA

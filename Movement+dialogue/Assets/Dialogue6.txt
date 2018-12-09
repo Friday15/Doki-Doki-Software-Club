@@ -2,28 +2,27 @@ Player;`background;0
 RIA;Welcome to the Integrated School Library, one of the satellite libraries here in Laguna Campus.;0;L
 RIA;Housed here are books, non-print materials, student research papers on varied subject for our Grades-------.;0;L
 Player;Whoaaa! So we do have a library for the them!:line,4
-KIRA;Yes, we do! And Oh, aside from what RIA has mentioned we also have access to different online databases,;0;R
-KIRA; facilities and equipment, all to meet the different needs of our pupils.;0;R
+KIRA;Yes, we do! Aside from what RIA has mentioned we also have access to different online databases, facilities and equipment;0;R
 RIA;Oh hi KIRA! This is (Player), he's looking for resources on his paper about online games.;0;L
 RIA;(Player), this is KIRA, she is the Kids Reference Assistant.;0;L
 KIRA;Hi (Player), nice to meet you.;0;R
-Player;Hi KIRA, it's nice to meet you too. I am looking for additional resources for my paper.:line,10
+Player;Hi KIRA, I am looking for additional resources for my paper.:line,9
 KIRA;Great! I can help you with that.;0;R
 KIRA;But remember, you cannot use all websites related to your topic, you must first evaluate if the website is authoritative.;0;R
 KIRA;To do that what question should you ask yourself?;0;R
-Player;Is the author/ organization recognized in the field of your topic?:lineRight,23;Does the information answer your research question?:lineWrong,14;Are sources listed so that they can be verified if necessary?:lineWrong,17;Do the author/s made his/ their intentions clear?:lineWrong,20
+Player;Is the author/s recognized in the field of your topic?:lineRight,22;Does the information answer your research question?:lineWrong,13;Are sources listed so that they can be verified if necessary?:lineWrong,16;Do the author/s made his/ their intentions clear?:lineWrong,19
 RIA;Nah ah! That's not the one...;0;L
 RIA;That's a question for relevance.;0;L
-Player;`jump;12
+Player;`jump;10
 RIA;Nah ah! That's not the one...;0;L
 RIA;That's a question for accuracy;0;L
-Player;`jump;12
+Player;`jump;10
 RIA;Nah ah! That's not the one...;0;L
 RIA;That's a question for purpose;0;L
-Player;`jump;12
+Player;`jump;10
 KIRA;Great! The author should be an authority from his field.;0;R
 KIRA;Here's my tablet.;0;R
-Player;Thank you, KIRA. I now know that I need to evaluate my sources using the CRAAP Test.:line,26
+Player;Thank you, KIRA.:line,25
 KIRA;You're welcome.;0;R
 RIA;Thanks, KIRA. We shall now see CORA;0;L
 Player;`clear;;KIRA

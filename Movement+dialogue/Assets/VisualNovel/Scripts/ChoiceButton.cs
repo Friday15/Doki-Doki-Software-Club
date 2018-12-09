@@ -60,15 +60,15 @@ public class ChoiceButton : MonoBehaviour
         
         if (command == "lineRight")
         {
-            button.GetComponent<Image>().color = Color.green;
+            //button.GetComponent<Image>().color = new Color(113, 247, 159);
         }
         else if (command == "lineWrong")
         {
-            button.GetComponent<Image>().color = Color.red;           
+            //button.GetComponent<Image>().color = new Color(113, 247, 159);
         }
         
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         //animator.SetBool("wrongButton", false);
         //animator.SetBool("correctButton", true);      
         //animator.SetBool("correctButton", false);

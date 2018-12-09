@@ -4,27 +4,23 @@ RIA;This library houses Books on education and communication as well as books an
 RIA; donated by the Natividad Galang Fajardo Foundation in the areas of economics, sciences, and psychology.;0;L
 Player;Wow! What a generous donor.:line,5
 EdRA;Hi RIA, it so nice of you to visit me here. Who's with you?;0;R
-RIA;Hi EdRA? Nice to see you. S/He's (Player) I'm helping him/ her out on his paper;0;L
-RIA; and we're almost done.;0;L
+RIA;Hi EdRA? Nice to see you. S/He's (Player) I'm helping him/ her out on his paper and we're almost done.;0;L
 RIA;We just need to cite some sources and run the paper for similarity check.;0;L
-Player;Yes, perhaps you can help me with some citations.:line,10
-EdRA;Sure. Just remember that the following should be included;0;R
-EdRA; in your citations for readers to properly locate your source:;0;R
+Player;Yes, perhaps you can help me with some citations.:line,9
+EdRA;Sure. Just remember that the following should be included in your citations for readers to properly locate your source:;0;R
 EdRA;Author and editor information;0;R
 EdRA;Publication date;0;R
 EdRA;Title;0;R
 EdRA;Publication information;0;R
 EdRA;Electronic sources and locator information;0;R
-Player;That's a lot to remember:line,18
-EdRA;Don't worry, there are citation tool is one of the features of our online databases;0;R
-EdRA; and there are citation makers and reference management tools to help you.;0;R
-EdRA;Now let's try citing this one. By the way, may I know what citation style;0;R
-EdRA; your professor required you to use?;0;R
-Player;Ah!, he said to use the American Psychological Association style.:line,23
+Player;That's a lot to remember:line,16
+EdRA;Don't worry, there are citation tools in our online databases and there are citation makers and reference management tools to help you.;0;R
+EdRA;Now let's try citing this one. By the way, may I know what citation style your professor required you to use?;0;R
+Player;Ah!, he said to use the American Psychological Association style.:line,19
 EdRA;Ah, APA. Let see if you can answer this:;0;R
 EdRA;*GAME WILL START*;0;R
 EdRA;That's right! You can now have the teacher's stick.;0;R
-Player;Thank you, EdRA. I'll cite my sources correctly.:line,27
+Player;Thank you, EdRA. I'll cite my sources correctly.:line,23
 EdRA;You're welcome.;0;R
 RIA;Thanks EdRA. It's time to see LERA now.;0;L
 Player;`clear;;EdRA
