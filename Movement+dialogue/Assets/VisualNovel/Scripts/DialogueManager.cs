@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     public AnimatedText animatedText;
     public Animator transition;
     public Animator charAnimator;
+    public Animator cameraAnimator;
     public AudioController Sound;
     public GameObject thingy;
 
@@ -42,6 +43,7 @@ public class DialogueManager : MonoBehaviour
         animatedText = GameObject.Find("TextBox").GetComponent<AnimatedText>();
         transition = GameObject.Find("AnimPanel").GetComponent<Animator>();
         charAnimator = GameObject.Find("GamePanel").GetComponent<Animator>();
+        cameraAnimator = GameObject.Find("Main Camera").GetComponent<Animator>();
         thingy = GameObject.Find("thingy");
         lineNum = -1;
         playerName = "Yukino";
@@ -208,6 +210,10 @@ public class DialogueManager : MonoBehaviour
             {
                 lineNum = parser.GetPose(lineNum);
                 ShowDialogue();
+            }
+            else if(parser.GetContent(lineNum) == "`explosion")
+            {
+                StartCoroutine(Explosion());
             }
             else if(parser.GetContent(lineNum) == "`clear")
             {
@@ -469,6 +475,17 @@ public class DialogueManager : MonoBehaviour
         transition.SetBool("fadeout", false);
 
         SceneManager.LoadScene(scene);
+    }
+
+    public IEnumerator Explosion()
+    {
+        playerControl = false;
+        cameraAnimator.SetBool("cameraTest", true);
+        lineNum++;
+        ShowDialogue();
+        UpdateUI();
+        yield return new WaitForSeconds(4);
+        playerControl = true;
     }
 
 }

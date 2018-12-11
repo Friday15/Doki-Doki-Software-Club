@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BattleTransitions\SimpleBlit.cs" />
     <Compile Include="Assets\Mini1\ClickEvent.cs" />
     <Compile Include="Assets\Mini1\FinishClick.cs" />
     <Compile Include="Assets\Mini1\Reset.cs" />
@@ -80,10 +81,13 @@
     <Compile Include="Assets\VisualNovel\Scripts\DialogueParser.cs" />
     <None Include="Assets\Dialogue.txt" />
     <None Include="Assets\Dialogue4.txt" />
+    <None Include="Assets\Dialogue1.txt" />
+    <None Include="Assets\BattleTransitions\BattleTransitions.shader" />
     <None Include="Assets\Dialogue5.txt" />
     <None Include="Assets\Dialogue6.txt" />
     <None Include="Assets\Dialogue2.txt" />
     <None Include="Assets\Dialogue3.txt" />
+    <None Include="Assets\Dialogue0.txt" />
     <None Include="Assets\Dialogue9.txt" />
     <None Include="Assets\Dialogue7.txt" />
     <None Include="Assets\Dialogue8.txt" />

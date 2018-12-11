@@ -1,0 +1,8 @@
+Player;`background;0
+RIA;Need any help? You seem so worried!;0;M
+Player;Im confused with the information around me. I want to be InfoSMART!:line,3
+RIA;I see. No worries! I'm here to guide you through. By the way, I'm RIA your Roving Information Assistant.;0;M
+Player;Nice to meet you RIA.:line,5
+RIA;Hello, (Player). Come on! Let's start your InfoSMART journey!;0;M
+Player;`clear;;RIA
+Player;`end
