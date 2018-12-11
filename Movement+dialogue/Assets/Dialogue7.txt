@@ -3,9 +3,9 @@ RIA;`loadchar;0;L
 CORA;Welcome to the Business Library located in RCBC Plaza in Makati. I am CORA, your Corporate Reference Assistant.;0;R
 Player;Cool! I didn't even know we have a library in Makati. Hi I'm (Player):line,4
 RIA;Yes. This library primarily serves our MBA and DBA students.;0;L
-Player;So if they are working in Makati, they don't have to go to Taft campus.:line,6
+Player;So if they are working in corporations here in Makati, they don't have to go to Taft campus for library resources and services.:line,6
 CORA;That's right. That's being where the users are.;0;R
-Player;I'm writing a paper about online games. Can you please take a look?:line,8
+Player;Hi CORA. Just wondering if you could help me. I'm writing a paper about online games. Can you please take a look?:line,8
 CORA;(After reading the paper) Hmmmmmm... you said you've consulted resources, right?;0;R
 CORA;If you did, why aren't there any citations?;0;R
 Player;Cite... what?:line,11
@@ -16,7 +16,7 @@ RIA; because your readers will know that your information are verified.;0;L
 RIA;Then, your citation will lead your readers to your sources.;0;L
 Player;That's how important citation is? I should put citations in my paper then.:line,17
 CORA;Yes, can put a check mark on the line before each instance when you need to cite and x when you don't need to.;0;R
-Player;Start Game:scene,9
+CORA;*GAME WILL START*;0;R
 CORA;CORA, will acknowledge the correct answer and give the item. Great! Here's the attache case.;0;R
 Player;Thank you, CORA. I promise to cite the sources I will be using in my paper.:line,21
 CORA;You're welcome.;0;R
