@@ -66,9 +66,10 @@ public class ChoiceButton : MonoBehaviour
         {
             //button.GetComponent<Image>().color = new Color(113, 247, 159);
         }
-        
 
-        yield return new WaitForSeconds(0.2f);
+        box.DisableButtons();
+        yield return new WaitForSeconds(0.5f);
+        
         //animator.SetBool("wrongButton", false);
         //animator.SetBool("correctButton", true);      
         //animator.SetBool("correctButton", false);

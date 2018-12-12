@@ -89,10 +89,10 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            if(buttons.Count == 1)
-            {
-                buttons[0].Select();
-            }
+            //if(buttons.Count == 1)
+            //{
+              //  buttons[0].Select();
+            //}
         }
         if (playerControl == true)
         {
@@ -120,6 +120,7 @@ public class DialogueManager : MonoBehaviour
                 thingy.SetActive(false);
                 charAnimator.SetBool("startIndicator", false);
                 charAnimator.SetBool("stopIndicator", true);
+                StartCoroutine(DelayUser());
             }
         }
 
@@ -163,6 +164,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void DisableButtons()
+    {
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            Button b = buttons[i];
+            b.interactable = false;
+        }
+
+    }
     void ParseLine()
     {
         try
@@ -283,8 +293,8 @@ public class DialogueManager : MonoBehaviour
         {
             print("SHOULD PRINT");
         }
-        buttons[buttons.Count - 1].Select();
-        buttonSelect = buttons.Count - 1;
+        //buttons[buttons.Count - 1].Select();
+        //buttonSelect = buttons.Count - 1;
     }
 
     void ResetImages(string charName)
@@ -488,4 +498,10 @@ public class DialogueManager : MonoBehaviour
         playerControl = true;
     }
 
+    public IEnumerator DelayUser()
+    {
+        playerControl = false;
+        yield return new WaitForSeconds(0.5f);
+        playerControl = true;
+    }
 }
