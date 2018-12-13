@@ -67,6 +67,9 @@
     <Compile Include="Assets\Mini1\Reset.cs" />
     <Compile Include="Assets\Mini2\Click.cs" />
     <Compile Include="Assets\Mini2\Hover.cs" />
+    <Compile Include="Assets\Mini3\Drag\DragHandler.cs" />
+    <Compile Include="Assets\Mini3\Drop\Slots.cs" />
+    <Compile Include="Assets\Mini3\FinishScript.cs" />
     <Compile Include="Assets\MiniMapScript.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />

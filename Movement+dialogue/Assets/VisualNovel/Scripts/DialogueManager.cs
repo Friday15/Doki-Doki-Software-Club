@@ -207,6 +207,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            print(parser.GetContent(lineNum) + " REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
             if (parser.GetContent(lineNum) == "`background")
             {
                 playerTalking = false;
@@ -241,6 +242,13 @@ public class DialogueManager : MonoBehaviour
             else if(parser.GetContent(lineNum) == "`end")
             {
                 endScene();
+            }
+            else if(parser.GetContent(lineNum) == "`tutorial1" || parser.GetContent(lineNum) == "`tutorial2" || parser.GetContent(lineNum) == "`tutorial3" || parser.GetContent(lineNum) == "`tutorialend")
+            {
+                charAnimator.SetTrigger(parser.GetContent(lineNum));
+                lineNum++;
+                ShowDialogue();
+                UpdateUI();
             }
             else
             {
@@ -292,6 +300,16 @@ public class DialogueManager : MonoBehaviour
         if (playerTalking)
         {
             print("SHOULD PRINT");
+        }
+
+        if (buttons.Count > 1)
+        {
+            playerControl = false;
+            characterName = parser.GetName(lineNum - 1);
+            dialogue = parser.GetContent(lineNum - 1);
+            dialogueBox.text = dialogue;
+            nameBox.text = characterName;
+            thingy.SetActive(false);
         }
         //buttons[buttons.Count - 1].Select();
         //buttonSelect = buttons.Count - 1;

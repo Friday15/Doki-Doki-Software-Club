@@ -79,5 +79,7 @@ public class ChoiceButton : MonoBehaviour
         box.ShowDialogue();
         box.UpdateUI();
         box.Sound.PlaySound();
+        box.StartCoroutine(box.DelayUser());
+        //box.playerControl = true;
     }
 }

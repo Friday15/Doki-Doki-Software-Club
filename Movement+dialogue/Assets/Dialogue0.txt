@@ -3,6 +3,7 @@ RIA;Once there was a kingdom called IamInfoSMART Land.;1;M
 RIA;...where people live in peace, harmony, and wisdom.;1;M
 RIA;...where knowledge is power and power is knowledge.;1;M
 RIA;...where everyone is an independent learner, a lifelong learner;1;M
+Player;`background;7
 Player;`explosion;0
 RIA;Until there came an explosion!;1;M
 Player;`background;1

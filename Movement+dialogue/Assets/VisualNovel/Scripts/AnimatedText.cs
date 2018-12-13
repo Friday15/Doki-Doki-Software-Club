@@ -61,9 +61,9 @@ public class AnimatedText : MonoBehaviour
         float originalHeight = textComp.cachedTextGeneratorForLayout.GetPreferredHeight(m, generationSettings);
         float newHeight = textComp.cachedTextGeneratorForLayout.GetPreferredHeight(m + " " + nextWord, generationSettings);
 
-        print("INCOMPLETE MESSAGE     " + m);
-        print("INDEX     " + i);
-        print("MESSAGE + NEXTWORD       " + m + " " + nextWord);
+        //print("INCOMPLETE MESSAGE     " + m);
+        //print("INDEX     " + i);
+        //print("MESSAGE + NEXTWORD       " + m + " " + nextWord);
 
         if (newHeight > originalHeight)
         {
@@ -82,12 +82,12 @@ public class AnimatedText : MonoBehaviour
         {
             if (!char.IsWhiteSpace(tempArray[i]))
             {
-                print("tempArray in getNextWord()    " + tempArray[i]);
+                //print("tempArray in getNextWord()    " + tempArray[i]);
                 nextWord += tempArray[i];
             }
             else
             {
-                print("NEXTWORD   " + nextWord);
+                //print("NEXTWORD   " + nextWord);
                 return nextWord;
             }
         }

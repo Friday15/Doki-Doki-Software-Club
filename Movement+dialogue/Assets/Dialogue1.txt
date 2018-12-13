@@ -4,5 +4,17 @@ Player;Im confused with the information around me. I want to be InfoSMART!:line,
 RIA;I see. No worries! I'm here to guide you through. By the way, I'm RIA your Roving Information Assistant.;0;M
 Player;Nice to meet you RIA.:line,5
 RIA;Hello, (Player). Come on! Let's start your InfoSMART journey!;0;M
+RIA;But first, let's talk about the basics.The main objective of the game is visit all stations and collect all objects from the LIAs to pass this test.;0;M
+Player;`background;2
+Player;`tutorial1
+RIA;On the top left of the screen is the inventory. As you progress through the game, you will slowly unlock the grayed out items;0;R
+Player;`tutorial2
+RIA;On the top right is the objectives tab. This displays your current objectives. Completing an objective will put a check mark beside said objective.;0;L
+RIA;To view your objectives with more detail, click "C" on your keyboard to open your notebook;0;L
+Player;`tutorial3
+RIA;On the bottom left is the controls for the game;0;R
+Player;`tutorialend
+RIA;To move your character on the game world, you use either WASD or the directional keys on your keyboard;0;R
+RIA;To talk to a NPC or an item, the user has to approach it until they see a prompt. Once they see this, hit enter to enter their dialogue;0;R
 Player;`clear;;RIA
 Player;`end

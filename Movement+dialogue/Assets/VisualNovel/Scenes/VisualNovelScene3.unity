@@ -811,7 +811,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1c2bba1a12872ae4a918f3ef3e049bc0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b3040bbd54db1e40a3a6876e9ff5a92, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1245,7 +1245,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d6273c70e200fa459a8002b50366289,
+      objectReference: {fileID: 21300000, guid: 2dc94f95f484bc04384690afa96e3add,
         type: 3}
     - target: {fileID: 114303039314905896, guid: ebce0ffcc0ae0d44c82c806136015710,
         type: 2}
@@ -1350,7 +1350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -3.5000153}
+  m_AnchoredPosition: {x: 0, y: -3.5000114}
   m_SizeDelta: {x: -74.3, y: -36.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143150633
@@ -1565,6 +1565,7 @@ MonoBehaviour:
   animatedText: {fileID: 0}
   transition: {fileID: 768498845}
   charAnimator: {fileID: 0}
+  cameraAnimator: {fileID: 0}
   Sound: {fileID: 1270945930}
   thingy: {fileID: 0}
 --- !u!1001 &1385136898

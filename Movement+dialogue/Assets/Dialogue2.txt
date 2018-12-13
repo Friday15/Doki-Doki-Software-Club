@@ -6,7 +6,7 @@ LORA;Welcome to the reference desk where you can ask your questions about your r
 LORA;On this floor, you will find reference books like dictionaries, handbooks, encyclopedias and many others.;0;R
 Player;Awesome!:line,7
 LORA;Now, what is the fastest way to get the location of these books in the library to find them?;0;R
-Player;Card catalog:lineWrong,9;Directories:lineWrong,12;Google:lineWrong,16;Online Public Access Catalog (OPAC):lineRight,18
+Player;Card catalog:lineWrong,9;Directories:lineWrong,12;Google:lineWrong,15;Online Public Access Catalog (OPAC):lineRight,18
 RIA;Nah ah! That's not the one...;0;L
 RIA;The card catalog used to be the fastest way to locate the books in the library when libraries are not automated yet.;0;L
 Player;`jump;7

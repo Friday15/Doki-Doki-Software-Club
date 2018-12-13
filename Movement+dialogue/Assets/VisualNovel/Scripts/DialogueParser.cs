@@ -85,6 +85,12 @@ public class DialogueParser : MonoBehaviour
                             DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
                             lines.Add(lineEntry);
                         }
+
+                        else if (lineData[1] == "`tutorial1" || lineData[1] == "`tutorial2" || lineData[1] == "`tutorial3" || lineData[1] == "`tutorialend")
+                        {
+                            DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
+                            lines.Add(lineEntry);
+                        }
                         else
                         {
                             DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "");

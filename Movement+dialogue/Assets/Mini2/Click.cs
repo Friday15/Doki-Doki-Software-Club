@@ -59,6 +59,8 @@ public class Click : MonoBehaviour {
             print(answer);
             if (answer == "Liu, C.-C.,& Chang, I.-C.(2016).Model of online game addiction: the role of computer-mediated communication motives.Telematics and Informatics,33,904–915.https://doi.org/10.1016/j.tele.2016.02.002")
                 SceneManager.LoadScene(7);
+            else
+                SceneManager.LoadScene(11);
         }
     }
     void shiftText(int num)

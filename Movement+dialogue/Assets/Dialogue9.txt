@@ -14,7 +14,7 @@ LERA;But copyrights do expire. Current laws extend copyright protection for the 
 Player;I've learned so much from you LERA. Thank you very much.:line,14
 LERA;Don't thank me yet as you still need to complete your final task.;0;R
 LERA;Going back to plagiarism, match the type of plagiarism to its description;0;R
-LERA;*GAME WILL START*;0;R
+Player;Start Game:scene,12
 LERA;Perfect, here's the gavel.;0;R
 Player;Thank you, LERA. I really learned so much today:line,19
 LERA;You're welcome.;0;R
