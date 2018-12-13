@@ -1,11 +1,5 @@
-<<<<<<< HEAD:Movement+dialogue/Assets/Scripts/GenderControl.cs.meta
-<<<<<<< HEAD
-fileFormatVersion: 2
-guid: f4d76e211933448478492a50ffb6c9cb
-=======
 fileFormatVersion: 2
 guid: fa1da205e7fd84547aafa2b148f9bf81
->>>>>>> parent of cccb023... jalter nut:Movement+dialogue/Assets/Mini1/ClickEvent.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -15,19 +9,3 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-<<<<<<< HEAD:Movement+dialogue/Assets/Scripts/GenderControl.cs.meta
-=======
-fileFormatVersion: 2
-guid: f4d76e211933448478492a50ffb6c9cb
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
->>>>>>> cccb023de4e5423beb17df26bc94ce3569286f4a
-=======
->>>>>>> parent of cccb023... jalter nut:Movement+dialogue/Assets/Mini1/ClickEvent.cs.meta

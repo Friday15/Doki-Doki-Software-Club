@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 %YAML 1.1
@@ -47,8 +50,13 @@ PlayerSettings:
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   defaultScreenWidth: 854
   defaultScreenHeight: 480
+=======
+  defaultScreenWidth: 1024
+  defaultScreenHeight: 768
+>>>>>>> parent of cccb023... jalter nut
 =======
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -100,7 +108,11 @@ PlayerSettings:
   allowFullscreenSwitch: 1
   graphicsJobMode: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   fullscreenMode: 3
+=======
+  fullscreenMode: 1
+>>>>>>> parent of cccb023... jalter nut
 =======
   fullscreenMode: 1
 >>>>>>> parent of cccb023... jalter nut
@@ -642,6 +654,7 @@ PlayerSettings:
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 %YAML 1.1
@@ -1276,5 +1289,7 @@ PlayerSettings:
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
 >>>>>>> cccb023de4e5423beb17df26bc94ce3569286f4a
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
