@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -28,8 +31,13 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1366
     height: 725
+=======
+    width: 1920
+    height: 997
+>>>>>>> parent of cccb023... jalter nut
 =======
     width: 1920
     height: 997
@@ -69,8 +77,13 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1366
     height: 725
+=======
+    width: 1920
+    height: 997
+>>>>>>> parent of cccb023... jalter nut
 =======
     width: 1920
     height: 997
@@ -104,7 +117,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1366
+=======
+    width: 1920
+>>>>>>> parent of cccb023... jalter nut
 =======
     width: 1920
 >>>>>>> parent of cccb023... jalter nut
@@ -136,8 +153,13 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 705
     width: 1366
+=======
+    y: 977
+    width: 1920
+>>>>>>> parent of cccb023... jalter nut
 =======
     y: 977
     width: 1920
@@ -174,6 +196,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1366
     height: 675
   m_MinSize: {x: 683, y: 492}
@@ -181,6 +204,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 1831
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -193,6 +218,9 @@ MonoBehaviour:
   controlID: 34
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -219,6 +247,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 968
     height: 675
   m_MinSize: {x: 406, y: 492}
@@ -226,6 +255,8 @@ MonoBehaviour:
   vertical: 1
   controlID: 1832
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -238,6 +269,9 @@ MonoBehaviour:
   controlID: 35
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -264,6 +298,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 968
     height: 397
   m_MinSize: {x: 406, y: 221}
@@ -271,6 +306,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 1833
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -283,6 +320,9 @@ MonoBehaviour:
   controlID: 36
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -307,11 +347,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 306
     height: 397
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -322,6 +365,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -349,11 +395,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 306
     y: 0
     width: 662
     height: 397
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -364,6 +413,9 @@ MonoBehaviour:
     height: 558
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -379,6 +431,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  - {fileID: 16}
+>>>>>>> parent of cccb023... jalter nut
 =======
   - {fileID: 16}
 >>>>>>> parent of cccb023... jalter nut
@@ -408,6 +464,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 397
     width: 968
     height: 278
@@ -421,6 +478,8 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -439,6 +498,9 @@ MonoBehaviour:
   m_LastSelected: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -461,6 +523,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 968
     y: 0
     width: 398
@@ -471,6 +534,8 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 19}
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -486,6 +551,9 @@ MonoBehaviour:
   - {fileID: 20}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -516,6 +584,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 308
     y: 19
     width: 658
@@ -526,6 +595,8 @@ MonoBehaviour:
   m_Stats: 0
   m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -541,6 +612,9 @@ MonoBehaviour:
   m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -555,11 +629,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -427
     m_HBaseRangeMax: 427
     m_VBaseRangeMin: -240
     m_VBaseRangeMax: 240
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -570,6 +647,9 @@ MonoBehaviour:
     m_VBaseRangeMax: 260
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -595,11 +675,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1366
       height: 637
     m_Scale: {x: 0.7775486, y: 0.7775487}
     m_Translation: {x: 683, y: 318.5}
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -610,6 +693,9 @@ MonoBehaviour:
     m_Translation: {x: 594.5, y: 260}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -624,11 +710,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -878.4017
       y: -409.62067
       width: 1756.8033
       height: 819.24133
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -639,6 +728,9 @@ MonoBehaviour:
       height: 520
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -651,7 +743,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1366, y: 654}
+=======
+  m_LastWindowPixelSize: {x: 1189, y: 537}
+>>>>>>> parent of cccb023... jalter nut
 =======
   m_LastWindowPixelSize: {x: 1189, y: 537}
 >>>>>>> parent of cccb023... jalter nut
@@ -690,6 +786,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 304
     height: 376
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -699,6 +796,8 @@ MonoBehaviour:
     m_LastClickedID: -1052
     m_ExpandedIDs: e2fbffffe6fbffff00000000
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -713,6 +812,9 @@ MonoBehaviour:
     m_ExpandedIDs: e6fbffff00000000
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -739,8 +841,12 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - VisualNovelScene6
   - Start
+=======
+  - VisualNovelScene9
+>>>>>>> parent of cccb023... jalter nut
 =======
   - VisualNovelScene9
 >>>>>>> parent of cccb023... jalter nut
@@ -777,6 +883,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 308
     y: 92
     width: 658
@@ -785,6 +892,8 @@ MonoBehaviour:
   m_SceneLighting: 1
   lastFramingTime: 10234.829531027948
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -798,6 +907,9 @@ MonoBehaviour:
   lastFramingTime: 17688.191258666666
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -810,9 +922,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.009005308, y: -0.84503496, z: -0.062807694}
     speed: 2
     m_Value: {x: 0.009005308, y: -0.84503496, z: -0.062807694}
+=======
+    m_Target: {x: 482.67694, y: 286.86954, z: 0.125}
+    speed: 2
+    m_Value: {x: 482.67694, y: 286.86954, z: 0.125}
+>>>>>>> parent of cccb023... jalter nut
 =======
     m_Target: {x: 482.67694, y: 286.86954, z: 0.125}
     speed: 2
@@ -862,9 +980,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 11.970157
     speed: 2
     m_Value: 11.970157
+=======
+    m_Target: 1047.5349
+    speed: 2
+    m_Value: 1047.5349
+>>>>>>> parent of cccb023... jalter nut
 =======
     m_Target: 1047.5349
     speed: 2
@@ -901,7 +1025,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -1069,6 +1196,9 @@ MonoBehaviour:
   m_Enabled: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -1090,6 +1220,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 382
     y: 92
     width: 1147
@@ -1097,6 +1228,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -1109,6 +1242,9 @@ MonoBehaviour:
 --- !u!114 &17
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -1137,9 +1273,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 489
     width: 966
     height: 257
+=======
+    y: 650
+    width: 1517
+    height: 368
+>>>>>>> parent of cccb023... jalter nut
 =======
     y: 650
     width: 1517
@@ -1171,6 +1313,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/PICS/char
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -1186,6 +1329,8 @@ MonoBehaviour:
     m_LastClickedID: 3102
     m_ExpandedIDs: 00000000fe090000200a0000280a00006833000000ca9a3b
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -1206,6 +1351,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000a8090000c2090000c40900006c30000000ca9a3b
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -1241,7 +1389,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000fe090000200a0000280a00006833000000ca9a3b
+=======
+    m_ExpandedIDs: 00000000a8090000c2090000c40900006c300000
+>>>>>>> parent of cccb023... jalter nut
 =======
     m_ExpandedIDs: 00000000a8090000c2090000c40900006c300000
 >>>>>>> parent of cccb023... jalter nut
@@ -1281,7 +1433,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000da0c0000de0a000000000000
+=======
+    m_ExpandedInstanceIDs: c6230000da0c00007c2e0000
+>>>>>>> parent of cccb023... jalter nut
 =======
     m_ExpandedInstanceIDs: c6230000da0c00007c2e0000
 >>>>>>> parent of cccb023... jalter nut
@@ -1320,7 +1476,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &17
+=======
+--- !u!114 &18
+>>>>>>> parent of cccb023... jalter nut
 =======
 --- !u!114 &18
 >>>>>>> parent of cccb023... jalter nut
@@ -1353,9 +1513,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 489
     width: 966
     height: 257
+=======
+    y: 650
+    width: 1524
+    height: 368
+>>>>>>> parent of cccb023... jalter nut
 =======
     y: 650
     width: 1524
@@ -1378,8 +1544,13 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 3954
 --- !u!114 &18
+=======
+  m_LastSelectedObjectID: 38100
+--- !u!114 &19
+>>>>>>> parent of cccb023... jalter nut
 =======
   m_LastSelectedObjectID: 38100
 --- !u!114 &19
@@ -1415,12 +1586,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 489
     width: 966
     height: 257
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &19
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -1432,6 +1606,9 @@ MonoBehaviour:
 --- !u!114 &20
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -1459,11 +1636,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 970
     y: 92
     width: 396
     height: 654
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======
@@ -1474,6 +1654,9 @@ MonoBehaviour:
     height: 926
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
@@ -1489,6 +1672,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2386,6 +2570,8 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
 >>>>>>> cccb023de4e5423beb17df26bc94ce3569286f4a
+=======
+>>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
 =======

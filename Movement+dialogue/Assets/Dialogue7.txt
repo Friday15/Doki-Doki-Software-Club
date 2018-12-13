@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Player;`background;0
 RIA;`loadchar;0;L
 CORA;Welcome to the Business Library located in RCBC Plaza in Makati. I am CORA, your Corporate Reference Assistant.;0;R
@@ -28,6 +29,8 @@ Player;`clear;;RIA
 =======
 =======
 >>>>>>> parent of cccb023... jalter nut
+=======
+>>>>>>> parent of cccb023... jalter nut
 Player;`background;0
 RIA;`loadchar;0;L
 CORA;Welcome to the Business Library located in RCBC Plaza in Makati. I am CORA, your Corporate Reference Assistant.;0;R
@@ -54,6 +57,9 @@ RIA;Thanks CORA. It's time to see EdRA now.;0;L
 Player;`clear;;CORA
 Player;`clear;;RIA
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
 =======
 >>>>>>> parent of cccb023... jalter nut
