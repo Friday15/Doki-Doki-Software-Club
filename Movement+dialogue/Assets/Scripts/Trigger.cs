@@ -51,7 +51,7 @@ public class Trigger : MonoBehaviour {
     {
         if (npc.Equals("NPC"))
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(1);
         }
         if (npc.Equals("NPC2"))
         { 
