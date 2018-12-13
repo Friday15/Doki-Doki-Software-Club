@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\GenderControl.cs" />
+    <Compile Include="Assets\Scripts\inventoryController.cs" />
     <Compile Include="Assets\Scripts\MCControl.cs" />
     <Compile Include="Assets\Scripts\ObjectiveController.cs" />
     <Compile Include="Assets\Scripts\StartBtnControl.cs" />
