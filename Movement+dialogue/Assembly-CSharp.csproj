@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Trigger.cs" />
     <Compile Include="Assets\Scripts\TriggerObject.cs" />
     <Compile Include="Assets\Scripts\UIObjController.cs" />
+    <Compile Include="Assets\Scripts\UnlockControl.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

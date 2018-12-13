@@ -37,6 +37,9 @@ public class StartBtnControl : MonoBehaviour {
                 print(text + " is a Girl");
                 PlayerPrefs.SetInt("gender", 2);
             }
+            PlayerPrefs.SetFloat("x", -3f);
+            PlayerPrefs.SetFloat("y", 1f);
+            PlayerPrefs.SetInt("stage", 1);
             SceneManager.LoadScene(0);
         }
 
