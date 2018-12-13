@@ -33,7 +33,7 @@ public class UnlockControl : MonoBehaviour {
         if (PlayerPrefs.HasKey("chapter"))
             chap = PlayerPrefs.GetInt("chapter");     
         else
-            chap = 1;//CHANGE THIS TO MANUALLY TEST CHAPTERS
+            chap = 2;//CHANGE THIS TO MANUALLY TEST CHAPTERS
         if (chap >= 2)
         {
             lock1.SetActive(false);

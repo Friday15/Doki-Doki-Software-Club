@@ -188,6 +188,11 @@ public class MCControl : MonoBehaviour
         float vmove = Input.GetAxis("Vertical");
         if (trigger.isConversing == 0)
             rg.velocity = new Vector2(hmove * Mspeed, vmove * Mspeed);
-        else rg.Sleep();
+        else
+            rg.Sleep();
+        PlayerPrefs.SetFloat("x", rg.position.x);
+        PlayerPrefs.SetFloat("y", rg.position.y);
+        PlayerPrefs.SetInt("stage", stage);
+
     }
 }
