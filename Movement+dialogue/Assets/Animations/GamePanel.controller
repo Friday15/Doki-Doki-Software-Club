@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!91 &9100000
@@ -2755,6 +2756,8 @@ AnimatorStateMachine:
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102631798892299954}
 =======
+=======
+>>>>>>> parent of cccb023... jalter nut
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!91 &9100000
@@ -5510,4 +5513,7 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102631798892299954}
+<<<<<<< HEAD
+>>>>>>> parent of cccb023... jalter nut
+=======
 >>>>>>> parent of cccb023... jalter nut
