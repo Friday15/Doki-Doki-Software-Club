@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of cccb023... jalter nut
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
@@ -218,9 +221,15 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 1.5, y: -9}
   serializedVersion: 2
   m_Radius: 6
+=======
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.33
+>>>>>>> parent of cccb023... jalter nut
 --- !u!212 &19579924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -256,7 +265,11 @@ SpriteRenderer:
   m_SortingLayerID: 1273786905
   m_SortingLayer: 3
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: c2822042b23c98148916aea262d14eee, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: ce2502615c117a540adc625c9842bd6b, type: 3}
+>>>>>>> parent of cccb023... jalter nut
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -274,8 +287,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 19579922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 11.08, y: 14.64, z: 0}
   m_LocalScale: {x: 0.15226546, y: 0.16043068, z: 1}
+=======
+  m_LocalPosition: {x: 14.82, y: 13.61, z: 0}
+  m_LocalScale: {x: 0.37434012, y: 0.36425424, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 40
@@ -824,9 +842,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298979997}
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0.59433985, y: 13.6, z: 0}
   m_LocalScale: {x: 2.2949533, y: 2.5297315, z: 1}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0.1908, y: 1.7559, z: 0}
+  m_LocalScale: {x: 0.31070092, y: 0.33496156, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children: []
   m_Father: {fileID: 1456096283}
   m_RootOrder: 0
@@ -2508,9 +2532,15 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 1, y: -10}
   serializedVersion: 2
   m_Radius: 7
+=======
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.33
+>>>>>>> parent of cccb023... jalter nut
 --- !u!212 &749434212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2546,7 +2576,11 @@ SpriteRenderer:
   m_SortingLayerID: 1273786905
   m_SortingLayer: 3
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 3b15644c81df3694880dfb411a549f3b, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: ce2502615c117a540adc625c9842bd6b, type: 3}
+>>>>>>> parent of cccb023... jalter nut
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2564,8 +2598,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749434210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 9.77, y: -7.69, z: 0}
   m_LocalScale: {x: 0.13468957, y: 0.14250603, z: 1}
+=======
+  m_LocalPosition: {x: 11.52, y: -8.82, z: 0}
+  m_LocalScale: {x: 0.37434012, y: 0.36425424, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
@@ -3745,9 +3784,15 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 0.5, y: -5}
   serializedVersion: 2
   m_Radius: 5
+=======
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.33
+>>>>>>> parent of cccb023... jalter nut
 --- !u!212 &1220744024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3783,7 +3828,11 @@ SpriteRenderer:
   m_SortingLayerID: 1273786905
   m_SortingLayer: 3
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: ad00b4d3a676b0e4585c473d381be9d2, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: ce2502615c117a540adc625c9842bd6b, type: 3}
+>>>>>>> parent of cccb023... jalter nut
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3801,8 +3850,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1220744022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -12.72, y: -5.65, z: 0}
   m_LocalScale: {x: 0.19479007, y: 0.20435897, z: 1}
+=======
+  m_LocalPosition: {x: -12.8, y: -6.27, z: 0}
+  m_LocalScale: {x: 0.37434012, y: 0.36425424, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
@@ -4217,10 +4271,17 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: -1189277311
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 78c664260468bb94a87fadada966118f, type: 3}
+=======
+  m_SortingLayerID: 1273786905
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ce2502615c117a540adc625c9842bd6b, type: 3}
+>>>>>>> parent of cccb023... jalter nut
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4238,8 +4299,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1361642828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.739, y: 2.937, z: 0}
   m_LocalScale: {x: 0.13250607, y: 0.13489698, z: 1}
+=======
+  m_LocalPosition: {x: 0.85, y: 2.48, z: 0}
+  m_LocalScale: {x: 0.37434012, y: 0.36425424, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
@@ -4256,9 +4322,15 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 1, y: -8}
   serializedVersion: 2
   m_Radius: 7
+=======
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.33
+>>>>>>> parent of cccb023... jalter nut
 --- !u!1 &1396070254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,9 +4449,15 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 1, y: -9}
   serializedVersion: 2
   m_Radius: 7
+=======
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.33
+>>>>>>> parent of cccb023... jalter nut
 --- !u!212 &1419484090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4415,7 +4493,11 @@ SpriteRenderer:
   m_SortingLayerID: 1273786905
   m_SortingLayer: 3
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: d4c5cc0426bc6c54ea4158fac30aca95, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: ce2502615c117a540adc625c9842bd6b, type: 3}
+>>>>>>> parent of cccb023... jalter nut
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4433,8 +4515,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1419484088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -11.31, y: 13.81, z: 0}
   m_LocalScale: {x: 0.13582686, y: 0.1453462, z: 1}
+=======
+  m_LocalPosition: {x: -10.64, y: 10.29, z: 0}
+  m_LocalScale: {x: 0.37434012, y: 0.36425424, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 37
@@ -4637,9 +4724,15 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 1.4018939, y: -8}
   serializedVersion: 2
   m_Radius: 3
+=======
+  m_Offset: {x: -0.21898533, y: -1.0594188}
+  serializedVersion: 2
+  m_Radius: 0.29007423
+>>>>>>> parent of cccb023... jalter nut
 --- !u!50 &1456096281
 Rigidbody2D:
   serializedVersion: 4
@@ -4695,7 +4788,11 @@ SpriteRenderer:
   m_SortingLayerID: 1273786905
   m_SortingLayer: 3
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 8c1992c8474c9e1408b29a25d1f62950, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: b99445263ee15434099920cebbd38dae, type: 3}
+>>>>>>> parent of cccb023... jalter nut
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4713,8 +4810,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1456096279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -3.99, y: 1.92, z: 0}
   m_LocalScale: {x: 0.12614714, y: 0.11939136, z: 1}
+=======
+  m_LocalPosition: {x: -3.710001, y: 1.6800013, z: 0}
+  m_LocalScale: {x: 0.87, y: 0.8159999, z: 1}
+>>>>>>> parent of cccb023... jalter nut
   m_Children:
   - {fileID: 298979998}
   m_Father: {fileID: 0}
@@ -4734,8 +4836,11 @@ MonoBehaviour:
   Mspeed: 5
   stage: 1
   rg: {fileID: 1456096281}
+<<<<<<< HEAD
   sr: {fileID: 1456096282}
   Other: {fileID: 21300000, guid: fc5b7cef8ea8cd54babbcd8aea64c534, type: 3}
+=======
+>>>>>>> parent of cccb023... jalter nut
   A1: {fileID: 829686824}
   B1: {fileID: 1744027655}
   A2: {fileID: 620864439}
@@ -7492,6 +7597,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 =======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -14987,3 +15093,5 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 >>>>>>> cccb023de4e5423beb17df26bc94ce3569286f4a
+=======
+>>>>>>> parent of cccb023... jalter nut

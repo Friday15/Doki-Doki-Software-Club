@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of cccb023... jalter nut
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!129 &1
@@ -43,8 +46,13 @@ PlayerSettings:
   m_SplashScreenLogos: []
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
+<<<<<<< HEAD
   defaultScreenWidth: 854
   defaultScreenHeight: 480
+=======
+  defaultScreenWidth: 1024
+  defaultScreenHeight: 768
+>>>>>>> parent of cccb023... jalter nut
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
@@ -91,7 +99,11 @@ PlayerSettings:
   visibleInBackground: 1
   allowFullscreenSwitch: 1
   graphicsJobMode: 0
+<<<<<<< HEAD
   fullscreenMode: 3
+=======
+  fullscreenMode: 1
+>>>>>>> parent of cccb023... jalter nut
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -630,6 +642,7 @@ PlayerSettings:
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
+<<<<<<< HEAD
 =======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -1263,3 +1276,5 @@ PlayerSettings:
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
 >>>>>>> cccb023de4e5423beb17df26bc94ce3569286f4a
+=======
+>>>>>>> parent of cccb023... jalter nut

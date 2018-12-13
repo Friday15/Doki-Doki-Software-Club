@@ -133,8 +133,6 @@ public class MCControl : MonoBehaviour {
     public float Mspeed = 5f;
     public int stage;
     public Rigidbody2D rg;
-    public SpriteRenderer sr;
-    public Sprite Other;
     public Transform A1;
     public Transform B1;
     public Transform A2;
@@ -160,15 +158,11 @@ public class MCControl : MonoBehaviour {
     //D4 <-> B5 
     // Use this for initialization
     void Start () {
-        if (PlayerPrefs.HasKey("gender"))
-        {
-            if (PlayerPrefs.GetInt("gender") == 2)
-                sr.sprite = Other;
-        }
-    }
-
-    // Update is called once per frame
-    void Update () {
+        print(PlayerPrefs.GetString("test") + " REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+	}
+	
+	// Update is called once per frame
+	void Update () {
         float hmove = Input.GetAxis("Horizontal");
         float vmove = Input.GetAxis("Vertical");
         if (trigger.isConversing == 0)
@@ -245,7 +239,7 @@ public class MCControl : MonoBehaviour {
         }
         if ((rg.position.y > B5.position.y - 1.5f && rg.position.y < B5.position.y + 1.5f) && rg.position.x < B5.position.x && stage == 5)
         {
-            rg.position = new Vector2(D4.position.x-0.5f, D4.position.y);
+            rg.position = D4.position;
             stage = 4;
         }
     }

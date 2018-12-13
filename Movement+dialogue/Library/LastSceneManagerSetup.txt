@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 sceneSetups:
 - path: Assets/VisualNovel/Scenes/VisualNovelScene6.unity
   isLoaded: 0
@@ -21,3 +22,9 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
 >>>>>>> cccb023de4e5423beb17df26bc94ce3569286f4a
+=======
+sceneSetups:
+- path: Assets/VisualNovel/Scenes/VisualNovelScene9.unity
+  isLoaded: 1
+  isActive: 1
+>>>>>>> parent of cccb023... jalter nut
