@@ -8,13 +8,12 @@ using UnityEngine.UI;
 
 public class FinishClick : MonoBehaviour {
     
-    public Image img4;
-    public Image img5;
+    public Image img1, img2, img3, img4, img5, img6;
     Color clr;
     public void finishClick()
     {
         clr = new Color(197 / 255f, 40 / 255f, 61 / 255f, 255 / 255f);
-        if (img4.GetComponent<Image>().color ==clr && img5.GetComponent<Image>().color == clr)
+        if (!(img1.GetComponent<Image>().color == clr) && img2.GetComponent<Image>().color == clr && !(img3.GetComponent<Image>().color == clr) && img4.GetComponent<Image>().color ==clr && !(img5.GetComponent<Image>().color == clr) && !(img6.GetComponent<Image>().color == clr))
         {
             String s = "REEEEEEEEEEE";
             PlayerPrefs.SetString("str", s);

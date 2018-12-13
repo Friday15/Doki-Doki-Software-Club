@@ -18,7 +18,7 @@ EdRA;Don't worry, there are citation tools in our online databases and there are
 EdRA;Now let's try citing this one. By the way, may I know what citation style your professor required you to use?;0;R
 Player;Ah!, he said to use the American Psychological Association style.:line,19
 EdRA;Ah, APA. Let see if you can answer this:;0;R
-EdRA;*GAME WILL START*;0;R
+Player;Start Game:scene,11
 EdRA;That's right! You can now have the teacher's stick.;0;R
 Player;Thank you, EdRA. I'll cite my sources correctly.:line,23
 EdRA;You're welcome.;0;R

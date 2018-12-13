@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/VisualNovel/Scenes/VisualNovelScene7.unity
+- path: Assets/VisualNovel/Scenes/VisualNovelScene0.unity
   isLoaded: 1
   isActive: 1

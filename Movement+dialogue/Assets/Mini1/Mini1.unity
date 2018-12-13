@@ -432,8 +432,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbd124fdefc662469d93e6370227bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img1: {fileID: 1016570911}
+  img2: {fileID: 824020015}
+  img3: {fileID: 1504222846}
   img4: {fileID: 605459069}
   img5: {fileID: 689664550}
+  img6: {fileID: 175916066}
 --- !u!114 &382973100
 MonoBehaviour:
   m_ObjectHideFlags: 0
