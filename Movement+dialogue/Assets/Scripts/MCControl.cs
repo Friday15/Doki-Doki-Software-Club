@@ -172,13 +172,11 @@ public class MCControl : MonoBehaviour
                 sr.sprite = Other;
         }
         if (PlayerPrefs.HasKey("x")&& PlayerPrefs.HasKey("y"))
-        {
             rg.position = new Vector2(PlayerPrefs.GetFloat("x"), PlayerPrefs.GetFloat("y"));
-        }
+        
         if (PlayerPrefs.HasKey("stage"))
-        {
             stage = PlayerPrefs.GetInt("stage");
-        }
+        
     }
 
     // Update is called once per frame
