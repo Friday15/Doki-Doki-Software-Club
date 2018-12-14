@@ -32,4 +32,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VisualNovel/Scenes/VisualNovelScene9.unity
     guid: 65e809f08fb64274cbcb247f2bb3ec25
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene1.unity
+    guid: b45e5618c990cc546b4d505c9b5a9c63
+  - enabled: 1
+    path: Assets/Mini1/Mini1.unity
+    guid: b6803a445cce3584eb2e772588a84ccf
+  - enabled: 1
+    path: Assets/Mini2/Mini2.unity
+    guid: dd1148515551e544ab033c180182247b
+  - enabled: 1
+    path: Assets/Mini3/Mini3.unity
+    guid: dd55712e616c9274abbdc2ced3623561
   m_configObjects: {}

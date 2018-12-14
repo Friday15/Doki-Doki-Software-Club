@@ -7,26 +7,22 @@ Player;Wow! Such an amazing space and a commendable partnership! :line,6
 ASRA;*walking towards Player and RIA*: Hi RIA! Who's with you today?;0;R
 RIA;I am with (Player) now. ASRA, meet (Player). (Player), meet ASRA. She is the American Studies Reference Assistant.;0;L
 ASRA;Nice to meet you (Player). Do you know how to search for online articles? You can find them within the library website.;0;R
-ASRA;Here is how: ASRA teaches the student how to search following the instructions in this link http://libanswers.dlsu.edu.ph/faq/23440;0;R
 ASRA;There are databases in the library that anyone with access can search regardless of degree program.;0;R
 ASRA;Examples are EBSCO, JSTOR, and PROQUEST.;0;R
-ASRA;What do you call these databases? ASSUME ANSWER IS MULTIDISCIPLINARY FOR NOW*;0;R
-Player;Subject-specific databases:line,14;Statistical databases:line,17;Multidisciplinary databases:line,25;Bibliographic databases:line,21
+ASRA;What do you call these databases? ;0;R
+Player;Subject-specific databases:lineWrong,13;Statistical databases:lineWrong,16;Multidisciplinary databases:lineRight,22;Bibliographic databases:lineWrong,19
 RIA;Nah ah! That's not the one . . .;0;L
 RIA;Subject-specific databases provide highly detailed research information on a particular topic.;0;L
-Player;`jump;13
+Player;`jump;9
 RIA;Nah ah! That's not the one . . .;0;L
-RIA;Statistical databases contains statistical data such as;0;L
-RIA; counts and averages and are commonly used in generating reports.;0;L
-Player;`jump;13
+RIA;Statistical databases contains statistical data such as counts and averages and are commonly used in generating reports.;0;L
+Player;`jump;9
 RIA;Nah ah! That's not the one . . .;0;L
-RIA;Bibliographic databases contains descriptive record of books, periodical articles,;0;L
-RIA; conference proceedings and audiovisual materials.;0;L
-Player;`jump;13
-ASRA;Well done! Multidisciplinary databases cover a wide range of academic subjects including;0;R
-ASRA; the arts, health care, business, literature, law, sciences, and more from journals, newspapers, magazines, ebooks, and reports;0;R
+RIA;Bibliographic databases contains descriptive record of books, periodical articles, conference proceedings and audiovisual materials.;0;L
+Player;`jump;9
+ASRA;Well done! Multidisciplinary databases cover a wide range of academic subjects including the arts, literature, law, sciences, and more.;0;R
 ASRA;Have my netbook.;0;R
-Player;Thank you, ASRA. I am now ready to do my term papers!:line,29
+Player;Thank you, ASRA. I am now ready to do my term papers!:line,25
 ASRA;You're welcome. Hope you've enjoyed it.;0;R
 RIA;Thanks for the time ASRA. We'll head on to SciTRA now.;0;L
 Player;`clear;;ASRA

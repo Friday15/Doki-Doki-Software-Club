@@ -1,0 +1,23 @@
+Player;`background;0
+RIA;Once there was a kingdom called IamInfoSMART Land.;1;M
+RIA;...where people live in peace, harmony, and wisdom.;1;M
+RIA;...where knowledge is power and power is knowledge.;1;M
+RIA;...where everyone is an independent learner, a lifelong learner;1;M
+Player;`background;7
+Player;`explosion;0
+RIA;Until there came an explosion!;1;M
+Player;`background;1
+RIA;The internet was born. It's easier to capture information. But harder to manage and utilize it.;1;M
+Player;`background;2
+RIA;*its an epidemic'*;1;M
+Player;`background;6
+RIA;Symptoms are lost, information overload, gullible, copy-paste, and being a copyright/fair use/IP violator.;1;M
+Player;`background;4
+RIA;The consequences of not being InfoSMART are, unreliable sources for his/her paper, failing classes, and being charged of academic dishonesty.;1;M
+Player;`background;3
+RIA;The DLSU Libraries doesn't want anyone to be a victim of this epidemic by making every Lasallian information literate.;1;M
+RIA;And thus, this test is being administered. Only the InfoSMART will survive.;1;M
+RIA;Only those who are able to S M A R T will be spared from the consequences. But don't you worry. You will meet friends along the way who will help you.;1;M
+RIA;Visit all stations and collect all objects from the LIAs to pass this test. Good luck!;1;M
+Player;`clear;;RIA
+Player;`end

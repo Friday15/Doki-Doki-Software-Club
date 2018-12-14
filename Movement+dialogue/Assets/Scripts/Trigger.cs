@@ -13,7 +13,7 @@ public class Trigger : MonoBehaviour {
     public ObjectiveController OC;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.name.Equals("NPC") || col.gameObject.name.Equals("NPC2") || col.gameObject.name.Equals("NPC3") || col.gameObject.name.Equals("NPC4") || col.gameObject.name.Equals("NPC5"))
+        if(col.gameObject.name.Equals("NPC") || col.gameObject.name.Equals("NPC2") || col.gameObject.name.Equals("NPC3") || col.gameObject.name.Equals("NPC4") || col.gameObject.name.Equals("NPC5") || col.gameObject.name.Equals("NPC6") || col.gameObject.name.Equals("NPC7") || col.gameObject.name.Equals("NPC8") || col.gameObject.name.Equals("NPC9"))
         {
             npc = col.gameObject.name.ToString();
             triggered = 1;
@@ -22,7 +22,7 @@ public class Trigger : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals("NPC") || col.gameObject.name.Equals("NPC2") || col.gameObject.name.Equals("NPC3") || col.gameObject.name.Equals("NPC4") || col.gameObject.name.Equals("NPC5"))
+        if (col.gameObject.name.Equals("NPC") || col.gameObject.name.Equals("NPC2") || col.gameObject.name.Equals("NPC3") || col.gameObject.name.Equals("NPC4") || col.gameObject.name.Equals("NPC5") || col.gameObject.name.Equals("NPC6") || col.gameObject.name.Equals("NPC7") || col.gameObject.name.Equals("NPC8") || col.gameObject.name.Equals("NPC9"))
         {
             npc = "";
             triggered = 0;
@@ -51,23 +51,48 @@ public class Trigger : MonoBehaviour {
     {
         if (npc.Equals("NPC"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(9);
+            PlayerPrefs.SetInt("chapter", 2);
         }
         if (npc.Equals("NPC2"))
         { 
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
+            PlayerPrefs.SetInt("chapter", 3);
         }
         if (npc.Equals("NPC3"))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
+            PlayerPrefs.SetInt("chapter", 4);
         }
         if (npc.Equals("NPC4"))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(3);
+            PlayerPrefs.SetInt("chapter", 5);
         }
         if (npc.Equals("NPC5"))
         {
+            SceneManager.LoadScene(4);
+            PlayerPrefs.SetInt("chapter", 6);
+        }
+        if (npc.Equals("NPC6"))
+        {
             SceneManager.LoadScene(5);
+            PlayerPrefs.SetInt("chapter", 7);
+        }
+        if (npc.Equals("NPC7"))
+        {
+            SceneManager.LoadScene(6);
+            PlayerPrefs.SetInt("chapter", 8);
+        }
+        if (npc.Equals("NPC8"))
+        {
+            SceneManager.LoadScene(7);
+            PlayerPrefs.SetInt("chapter", 9);
+        }
+        if (npc.Equals("NPC9"))
+        {
+            SceneManager.LoadScene(8);
+            PlayerPrefs.SetInt("chapter", 10);
         }
     }
     

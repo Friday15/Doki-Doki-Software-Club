@@ -2,25 +2,21 @@ Player;`background;0
 RIA;Hi LORA! Meet my friend, (Player).;0;L
 LORA;Hello, (Player). I'm LORA your Library Online Reference Assistant, nice to meet you!;0;R
 Player;Oh you're LORA! Finally I met you.:line,4
-LORA;Glad to meet you too! Welcome to the reference desk where you can ask your questions about your researches;0;R
-LORA; through email, chat, phone, text. Skype, Facebook and Twitter!;0;R
+LORA;Welcome to the reference desk where you can ask your questions about your researches through email, chat, phone, text and social media!;0;R
 LORA;On this floor, you will find reference books like dictionaries, handbooks, encyclopedias and many others.;0;R
-Player;Awesome!:line,8
+Player;Awesome!:line,7
 LORA;Now, what is the fastest way to get the location of these books in the library to find them?;0;R
-Player;Card catalog:line,10;Directories:line,13;Google:line,17;Online Public Access Catalog (OPAC):line,21
+Player;Card catalog:lineWrong,9;Directories:lineWrong,12;Google:lineWrong,15;Online Public Access Catalog (OPAC):lineRight,18
 RIA;Nah ah! That's not the one...;0;L
 RIA;The card catalog used to be the fastest way to locate the books in the library when libraries are not automated yet.;0;L
-Player;`jump;8
+Player;`jump;7
 RIA;Nah ah! That's not the one...;0;L
-RIA;The directory is a book or website listing names of individuals or organizations arranged;0;L
-RIA; alphabetically or thematically with the details such as addresses and telephone numbers.;0;L
-Player;`jump;8
+RIA;The directory is a listing names of people or organizations arranged by alphabet or theme with the details such as addresses or phone numbers.;0;L
+Player;`jump;7
 RIA;Nah ah! That's not the one...;0;L
-RIA;Google is a search engine which searches and retrieves results from the world wide web;0;L
-RIA; based on their contents and on how many other pages on the Web linked to them;0;L
-Player;`jump;8
-LORA;Good job! The OPAC list down books available in the library;0;R
-LORA; along with their bibliographic details and location for faster retrieval.;0;R
+RIA;Google is a search engine which searches results from the web based on their contents and how many other pages are linked to it.;0;L
+Player;`jump;7
+LORA;Good job! The OPAC list down books available in the library along with their bibliographic details and location for faster retrieval.;0;R
 LORA;Here is my smartphone. Keep going.;0;R
 LORA;Other than books, we also have theses, dissertations and faculty publications. You may ask ArRA how to locate them.;0;R
 Player;`clear;;LORA

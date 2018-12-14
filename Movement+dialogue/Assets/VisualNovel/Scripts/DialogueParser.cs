@@ -68,7 +68,7 @@ public class DialogueParser : MonoBehaviour
                     string[] lineData = line.Split(';');
                     if (lineData[0] == "Player")
                     {
-                        if(lineData[1] == "`background" || lineData[1] == "`jump")
+                        if(lineData[1] == "`background" || lineData[1] == "`jump" || lineData[1] == "`explosion")
                         {
                             DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), "");
                             lines.Add(lineEntry);
@@ -81,6 +81,12 @@ public class DialogueParser : MonoBehaviour
                         }
 
                         else if(lineData[1] == "`end")
+                        {
+                            DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
+                            lines.Add(lineEntry);
+                        }
+
+                        else if (lineData[1] == "`tutorial1" || lineData[1] == "`tutorial2" || lineData[1] == "`tutorial3" || lineData[1] == "`tutorialend")
                         {
                             DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
                             lines.Add(lineEntry);
