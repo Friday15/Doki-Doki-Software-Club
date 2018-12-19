@@ -7,8 +7,10 @@ public class inventoryController : MonoBehaviour {
 
     private Image [] inventoryArray = new Image[9];
     private int status;
+    public Canvas UI;
 	// Use this for initialization
 	void Start () {
+        
         inventoryArray[0] = GameObject.Find("smartPhone").GetComponent<Image>();
         inventoryArray[1] = GameObject.Find("scroll").GetComponent<Image>();
         inventoryArray[2] = GameObject.Find("nutbook").GetComponent<Image>();
@@ -32,11 +34,17 @@ public class inventoryController : MonoBehaviour {
 
     public void updateInventory()
     {
-        status = PlayerPrefs.GetInt("inventory");
+        status = PlayerPrefs.GetInt("inventory") - 2;
         //status = 4;
-        for(int i = 0; i < status - 1; i++)
+        if (status > 0)
         {
-            inventoryArray[i].color = new Color32(255, 255, 255, 255);
+            for (int i = 0; i < status; i++)
+            {
+                inventoryArray[i].color = new Color32(255, 255, 255, 255);
+            }
         }
+        if (status ==8)
+            inventoryArray[8].color = new Color32(255, 255, 255, 255);
     }
 }
+

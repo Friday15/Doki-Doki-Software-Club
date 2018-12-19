@@ -243,6 +243,11 @@ public class DialogueManager : MonoBehaviour
             {
                 endScene();
             }
+
+            else if (parser.GetContent(lineNum) == "`finish")
+            {
+                finish();
+            }
             else if(parser.GetContent(lineNum) == "`tutorial1" || parser.GetContent(lineNum) == "`tutorial2" || parser.GetContent(lineNum) == "`tutorial3" || parser.GetContent(lineNum) == "`tutorialend")
             {
                 charAnimator.SetTrigger(parser.GetContent(lineNum));
@@ -419,6 +424,13 @@ public class DialogueManager : MonoBehaviour
         PlayerPrefs.SetInt("lineNum", lineNum);
     }
 
+    void finish()
+    {
+        playerControl = false;
+        playerTalking = true;
+        StartCoroutine(finishGame());
+    }
+
     IEnumerator ChangeBGTransition(GameObject bg, Texture bgTexture)
     {
         playerControl = false;
@@ -522,5 +534,16 @@ public class DialogueManager : MonoBehaviour
         playerControl = false;
         yield return new WaitForSeconds(0.5f);
         playerControl = true;
+    }
+
+    public IEnumerator finishGame()
+    {
+        playerControl = false;
+        transition.SetBool("fadeout", true);
+        playerControl = false;
+        dialogue = "";
+        yield return new WaitForSeconds(2);
+        Application.OpenURL("https://drive.google.com/file/d/1lLVW8zBouo_By98xkLum8vLUd8tPWd7O/view?usp=sharing");
+        SceneManager.LoadScene(14);
     }
 }

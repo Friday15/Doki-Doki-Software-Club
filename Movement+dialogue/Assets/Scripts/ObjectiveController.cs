@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ObjectiveController : MonoBehaviour {
     
-    public Text PastText;
     public Text CurrentText;
     public AudioController Sound;
     // Use this for initialization
@@ -26,6 +25,7 @@ public class ObjectiveController : MonoBehaviour {
 
     public void MissionComplete(int Chapter,int task)
     {
+        /*
         if (Chapter == 1 && task == 1&&CChapter==1&&Ctask==1)
         {
             //CurrentO= "Give Books to Girl (Press enter twice near her)";
@@ -43,10 +43,11 @@ public class ObjectiveController : MonoBehaviour {
             UpdateChapter("Wait for future updates");
             two.sprite = NonCheck;
         }
-            
+         */   
     }
     
 	void Start () {
+        /*
         c1.Add("Find Books");
         c1.Add("Give Books to Girl (Press enter twice near her)");
         c1.Add("Wait for future updates");
@@ -55,14 +56,59 @@ public class ObjectiveController : MonoBehaviour {
         {
             c1done[i] = false;
         }
-
+        */
         //setupObjectives(c1done, c1);
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        int chap;
+        if (PlayerPrefs.HasKey("chapter"))
+            chap = PlayerPrefs.GetInt("chapter");
+        else
+            chap = 1;
+
+        if (chap == 1)
+        {
+            CurrentText.text="Talk to Ria";
+        }else if (chap == 2)
+        {
+            CurrentText.text = "Talk to Lora";
+        }
+        else if (chap == 3)
+        {
+            CurrentText.text = "Talk to ArRa";
+        }
+        else if (chap == 4)
+        {
+            CurrentText.text = "Talk to ASRA";
+        }
+        else if (chap == 5)
+        {
+            CurrentText.text = "Talk to SciTRa";
+        }
+        else if (chap == 6)
+        {
+            CurrentText.text = "Talk to KIRA";
+        }
+        else if (chap == 7)
+        {
+            CurrentText.text = "Talk to CoRa";
+        }
+        else if (chap == 8)
+        {
+            CurrentText.text = "Talk to EdRA";
+        }
+        else if (chap == 9)
+        {
+            CurrentText.text = "Talk to LERA";
+        }
+        else
+        {
+            CurrentText.text = "Talk to LERA";
+            one.sprite = check;
+        }
+    }
     /*
     public void setupObjectives(bool[] aredone,List<string> tasks)
     {
@@ -89,6 +135,7 @@ public class ObjectiveController : MonoBehaviour {
         }
     }
     */
+    /*
     public void UpdateChapter(string chapname){
         CurrentO = chapname;
         //addPast(UItext.text, CurrentO);
@@ -98,7 +145,8 @@ public class ObjectiveController : MonoBehaviour {
     }
     public void addPast(string past,string s)
     {
-        PastText.text = PastText.text + "\n>" + past;
-        CurrentText.text = "Current Objective:\n" + s;
+        //PastText.text = PastText.text + "\n>" + past;
+        //CurrentText.text = "Current Objective:\n" + s;
     }
+    */
 }

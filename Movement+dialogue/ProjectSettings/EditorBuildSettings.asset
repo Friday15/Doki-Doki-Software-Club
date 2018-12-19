@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mini3/Mini3.unity
     guid: dd55712e616c9274abbdc2ced3623561
+  - enabled: 1
+    path: Assets/VisualNovel/Scenes/VisualNovelScene0.unity
+    guid: 40f337eec3a783f4682aedc951f59618
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 274f057473ce0f742bd5c9134250dd12
   m_configObjects: {}

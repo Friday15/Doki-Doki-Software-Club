@@ -19,6 +19,10 @@ LERA;Perfect, here's the gavel.;0;R
 Player;Thank you, LERA. I really learned so much today:line,19
 LERA;You're welcome.;0;R
 RIA;Thanks LERA;0;L
+Player;`background;1
 Player;`clear;;LERA
+RIA;Congratulations on completing the game.;0;M
+RIA;Your browser will automatically download your certificate after this line;0;M
+Player;`finish
 Player;`clear;;RIA
 Player;`end

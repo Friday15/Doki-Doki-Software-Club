@@ -23,6 +23,9 @@ public class StartBtnControl : MonoBehaviour {
         if (text == "")
         {
             warning.text = "Pls don't leave this blank";
+        }else if (text.Length>10)
+        {
+            warning.text = "Pls keep it less than 10 character";
         }
         else
         {
@@ -42,7 +45,9 @@ public class StartBtnControl : MonoBehaviour {
             PlayerPrefs.SetInt("stage", 1);
             PlayerPrefs.SetInt("chapter", 1);
             PlayerPrefs.DeleteKey("inventory");
-            SceneManager.LoadScene(0);
+            PlayerPrefs.SetInt("page", 1);
+            SceneManager.LoadScene(13);
+
         }
 
     }

@@ -192,6 +192,7 @@ public class MCControl : MonoBehaviour
         PlayerPrefs.SetFloat("x", rg.position.x);
         PlayerPrefs.SetFloat("y", rg.position.y);
         PlayerPrefs.SetInt("stage", stage);
+        
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +23,7 @@ public class UnlockControl : MonoBehaviour {
     public GameObject arrow6;
     public GameObject arrow7;
     public GameObject arrow8;
+    public inventoryController inv;
     // Use this for initialization
     void Start () {
 		
@@ -72,7 +74,17 @@ public class UnlockControl : MonoBehaviour {
         if (chap >=9)
             arrow8.SetActive(true);
 
-        inventoryController inventory = GameObject.Find("inventory").GetComponent<inventoryController>();
-        inventory.updateInventory();
+        if (chap != 1)
+        {
+            try
+            {
+                //inventoryController inventory = GameObject.Find("inventory").GetComponent<inventoryController>();
+                inventoryController inventory = inv;
+                inventory.updateInventory();
+            }catch(Exception e)
+            {
+
+            }
+        }
     }
 }
