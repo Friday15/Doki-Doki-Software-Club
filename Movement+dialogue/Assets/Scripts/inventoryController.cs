@@ -23,7 +23,7 @@ public class inventoryController : MonoBehaviour {
 
         for(int i = 0; i < 9; i++)
         {
-            inventoryArray[i].color = new Color32(128, 128, 128, 255);
+            inventoryArray[i].color = new Color32(0, 0, 0, 255);
         }
     }
 	

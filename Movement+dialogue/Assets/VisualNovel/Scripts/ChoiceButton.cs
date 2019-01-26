@@ -61,10 +61,12 @@ public class ChoiceButton : MonoBehaviour
         if (command == "lineRight")
         {
             //button.GetComponent<Image>().color = new Color(113, 247, 159);
+            box.Sound.PlayCorrect();
         }
         else if (command == "lineWrong")
         {
             //button.GetComponent<Image>().color = new Color(113, 247, 159);
+            box.Sound.PlayWrong();
         }
 
         box.DisableButtons();

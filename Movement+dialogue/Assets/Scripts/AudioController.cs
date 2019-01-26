@@ -6,9 +6,11 @@ public class AudioController : MonoBehaviour {
     public AudioSource Sound;
     public AudioClip Claps;
     public AudioClip Notes;
+    public AudioClip Correct;
+    public AudioClip Wrong;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -24,6 +26,18 @@ public class AudioController : MonoBehaviour {
     public void PlayNotes()
     {
         Sound.clip = Notes;
+        Sound.Play();
+    }
+
+    public void PlayCorrect()
+    {
+        Sound.clip = Correct;
+        Sound.Play();
+    }
+
+    public void PlayWrong()
+    {
+        Sound.clip = Wrong;
         Sound.Play();
     }
 }

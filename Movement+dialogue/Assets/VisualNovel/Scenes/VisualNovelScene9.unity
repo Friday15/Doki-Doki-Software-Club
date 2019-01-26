@@ -1537,6 +1537,8 @@ MonoBehaviour:
   Sound: {fileID: 2122934853}
   Claps: {fileID: 8300000, guid: 5774ff91e7cd4964083f4ca456cabee8, type: 3}
   Notes: {fileID: 8300000, guid: 4ab763316bc94b84da70074723421d0f, type: 3}
+  Correct: {fileID: 8300000, guid: 98274a21eab7aa849847a017f6b159cc, type: 3}
+  Wrong: {fileID: 8300000, guid: 5ed0b1f1a6359ba4dadbd6eea7f44253, type: 3}
 --- !u!114 &1270945931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,7 +1924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bg:
-  - {fileID: 2800000, guid: b537702f6fd34c74fad7273988c1e9a1, type: 3}
+  - {fileID: 2800000, guid: 9e91540212160ab468896761f9e4c598, type: 3}
   - {fileID: 2800000, guid: 20ba09788e2332e43bc297f4d2aaccff, type: 3}
 --- !u!23 &1446233149
 MeshRenderer:
