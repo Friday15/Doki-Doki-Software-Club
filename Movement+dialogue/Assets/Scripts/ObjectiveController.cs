@@ -25,39 +25,11 @@ public class ObjectiveController : MonoBehaviour {
 
     public void MissionComplete(int Chapter,int task)
     {
-        /*
-        if (Chapter == 1 && task == 1&&CChapter==1&&Ctask==1)
-        {
-            //CurrentO= "Give Books to Girl (Press enter twice near her)";
-            //addPast(UItext.text,CurrentO);
-            //UItext.text = CurrentO;
-            //Ctask++;
-            UpdateChapter("Give Books to Girl (Press enter twice near her)");
-            one.sprite = NonCheck;
-        }else if(Chapter ==1 && task == 2&& CChapter == 1 && Ctask == 2)
-        {
-            //CurrentO = "Wait for future updates";
-            //addPast(UItext.text, CurrentO);
-            //UItext.text = CurrentO;
-            //Ctask++;
-            UpdateChapter("Wait for future updates");
-            two.sprite = NonCheck;
-        }
-         */   
+
     }
     
 	void Start () {
-        /*
-        c1.Add("Find Books");
-        c1.Add("Give Books to Girl (Press enter twice near her)");
-        c1.Add("Wait for future updates");
-        c1done = new bool[c1.Count];
-        for(int i = 0; i < c1.Count; i++)
-        {
-            c1done[i] = false;
-        }
-        */
-        //setupObjectives(c1done, c1);
+
     }
 	
 	// Update is called once per frame
@@ -73,35 +45,35 @@ public class ObjectiveController : MonoBehaviour {
             CurrentText.text="Talk to Ria";
         }else if (chap == 2)
         {
-            CurrentText.text = "Talk to Lora";
+            CurrentText.text = "Meet LORA at the Reference Desk";
         }
         else if (chap == 3)
         {
-            CurrentText.text = "Talk to ArRa";
+            CurrentText.text = "Meet ArRA at the Archives";
         }
         else if (chap == 4)
         {
-            CurrentText.text = "Talk to ASRA";
+            CurrentText.text = "Meet ASRA at the American Corner";
         }
         else if (chap == 5)
         {
-            CurrentText.text = "Talk to SciTRa";
+            CurrentText.text = "Meet SciTRA at the College Library";
         }
         else if (chap == 6)
         {
-            CurrentText.text = "Talk to KIRA";
+            CurrentText.text = "Meet KIRA at the Integrated School";
         }
         else if (chap == 7)
         {
-            CurrentText.text = "Talk to CoRa";
+            CurrentText.text = "Meet CoRA at the Business Library";
         }
         else if (chap == 8)
         {
-            CurrentText.text = "Talk to EdRA";
+            CurrentText.text = "Meet EDRA at the BBLRC";
         }
         else if (chap == 9)
         {
-            CurrentText.text = "Talk to LERA";
+            CurrentText.text = "Meet LeRA at the Law Library";
         }
         else
         {
@@ -109,44 +81,5 @@ public class ObjectiveController : MonoBehaviour {
             one.sprite = check;
         }
     }
-    /*
-    public void setupObjectives(bool[] aredone,List<string> tasks)
-    {
-        int i = 0;
-        for(i = 0; i < tasks.Count; i++)
-        {
-            if (aredone[i] == false)
-                break;
-        }
-        Text Mission = Cur.GetComponentInChildren<Text>();
-        Mission.text = tasks[i];
 
-        int ctr = 0;
-        for (i = i+1; i < tasks.Count; i++)
-        {
-            ctr++;
-            GameObject copy = new GameObject();
-            copy = Instantiate(Cur);
-            copy.transform.SetParent(UObjective.transform);
-            Text Fmission=copy.GetComponentInChildren<Text>();
-            Fmission.text = tasks[i];
-            copy.SetActive(true);
-            copy.transform.localPosition = new Vector2(Cur.transform.localPosition.x, Cur.transform.localPosition.y-(ctr*10));
-        }
-    }
-    */
-    /*
-    public void UpdateChapter(string chapname){
-        CurrentO = chapname;
-        //addPast(UItext.text, CurrentO);
-        //UItext.text = CurrentO;
-        Ctask++;
-        Sound.PlaySound();
-    }
-    public void addPast(string past,string s)
-    {
-        //PastText.text = PastText.text + "\n>" + past;
-        //CurrentText.text = "Current Objective:\n" + s;
-    }
-    */
 }

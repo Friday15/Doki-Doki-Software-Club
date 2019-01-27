@@ -16,6 +16,11 @@ public class UIArrowControl : MonoBehaviour
     public void clicked()
     {
         int page = PlayerPrefs.GetInt("page");
+        int chap = PlayerPrefs.GetInt("chapter");
+        if (page < 1 || page > chap)
+        {
+            page = 1;
+        }
         if (isleft)
         {
             page--;
@@ -31,34 +36,44 @@ public class UIArrowControl : MonoBehaviour
     }
     // Use this for initialization
     void Start () {
-		
+        print(isleft);
+        print(PlayerPrefs.GetInt("page"));
 	}
 	
 	// Update is called once per frame
 	void Update () {
         int page = PlayerPrefs.GetInt("page");
         int chap = PlayerPrefs.GetInt("chapter");
-        if (isleft && page <=1)
+
+        if (isleft)
         {
-            left.enabled = false;
-            left.image.color= new Color32(128, 128, 128, 255);
+            if (page == 1)
+            {
+                left.enabled = false;
+                left.image.color = new Color32(128, 128, 128, 255);
+            }
+            else
+            {
+                left.enabled = true;
+                left.image.color = new Color32(255, 255, 255, 255);
+            }
         }
-        else
+
+        if (!isleft)
         {
-            left.enabled = true;
-            left.image.color = new Color32(255, 255, 255, 255);
-        }
-            
-        if (!isleft && page == chap)
-        {
-            right.enabled = false;
-            right.image.color = new Color32(128, 128, 128, 255);
-        }
-        else
-        {
-            right.enabled = true;
-            right.image.color = new Color32(255, 255, 255, 255);
-        }
+            if (page == chap)
+            {
+                right.enabled = false;
+                right.image.color = new Color32(128, 128, 128, 255);
+            }
+            else
+            {
+                right.enabled = true;
+                right.image.color = new Color32(255, 255, 255, 255);
+            }
+        }    
+
+
         if (page == 1)
         {
             leftpage.text = "CHAPTER 1:\nLOST";

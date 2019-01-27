@@ -8,13 +8,14 @@ public class StartBtnControl : MonoBehaviour {
     public InputField names;
     public GenderControl Boy;
     public Text warning;
-	// Use this for initialization
-	void Start () {
+    public GameObject canvas;
+    // Use this for initialization
+    void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
     public void StartGame()
@@ -22,13 +23,14 @@ public class StartBtnControl : MonoBehaviour {
         string text = names.text;
         if (text == "")
         {
-            warning.text = "Pls don't leave this blank";
+            warning.text = "Please don't leave this blank";
         }else if (text.Length>10)
         {
-            warning.text = "Pls keep it less than 10 character";
+            warning.text = "Please keep it less than 10 character";
         }
         else
         {
+            warning.text = "";
             PlayerPrefs.SetString("name", text);
             if (Boy.getChosen())
             {
@@ -40,13 +42,7 @@ public class StartBtnControl : MonoBehaviour {
                 print(text + " is a Girl");
                 PlayerPrefs.SetInt("gender", 2);
             }
-            PlayerPrefs.SetFloat("x", -3f);
-            PlayerPrefs.SetFloat("y", 1f);
-            PlayerPrefs.SetInt("stage", 1);
-            PlayerPrefs.SetInt("chapter", 1);
-            PlayerPrefs.DeleteKey("inventory");
-            PlayerPrefs.SetInt("page", 1);
-            SceneManager.LoadScene(13);
+            canvas.SetActive(true);
 
         }
 

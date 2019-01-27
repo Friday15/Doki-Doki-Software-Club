@@ -4,30 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UnlockControl : MonoBehaviour {
-    public GameObject lock1;
-    public GameObject arrow1;
-    public GameObject lock2;
-    public GameObject arrow2;
-    public GameObject lock22;
-    public GameObject arrow22;
-    public GameObject lock3;
-    public GameObject arrow3;
-    public GameObject lock4;
-    public GameObject arrow4;
-    public GameObject lock42;
-    public GameObject arrow42;
-    public GameObject arrow43;
-    public GameObject arrow44;
-    public GameObject lock5;
-    public GameObject arrow5;
-    public GameObject arrow6;
-    public GameObject arrow7;
-    public GameObject arrow8;
+
     public inventoryController inv;
     // Use this for initialization
     void Start () {
-		
-	}
+        //PlayerPrefs.SetInt("chapter", 1);
+        //PlayerPrefs.SetInt("page", 1);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -36,44 +19,38 @@ public class UnlockControl : MonoBehaviour {
             chap = PlayerPrefs.GetInt("chapter");     
         else
             chap = 1;//CHANGE THIS TO MANUALLY TEST CHAPTERS
-        if (chap >= 2)
+        if (chap == 2)
         {
-            lock1.SetActive(false);
-            arrow1.SetActive(true);
-        }
-        if (chap >= 3)
-        {
-            lock2.SetActive(false);
-            arrow2.SetActive(true);
-            lock22.SetActive(false);
-            arrow22.SetActive(true);
-        }
-        if (chap >= 4)
-        {
-            lock3.SetActive(false);
-            arrow3.SetActive(true);
-        }
-        if (chap >= 5)
-        {
-            lock4.SetActive(false);
-            arrow4.SetActive(true);
-            lock42.SetActive(false);
-            arrow42.SetActive(true);
-            arrow43.SetActive(true);
-            arrow44.SetActive(true);
-        }
-        if (chap >= 6)
-        {
-            lock5.SetActive(false);
-            arrow5.SetActive(true);
-        }
-        if (chap >= 7)
-            arrow6.SetActive(true);
-        if (chap >= 8)
-            arrow7.SetActive(true);
-        if (chap >=9)
-            arrow8.SetActive(true);
 
+        }
+        if (chap == 3)
+        {
+
+        }
+        if (chap == 4)
+        {
+
+        }
+        if (chap == 5)
+        {
+
+        }
+        if (chap == 6)
+        {
+
+        }
+        if (chap == 7)
+        {
+
+        }
+        if (chap == 8)
+        {
+
+        }
+        if (chap == 9)
+        {
+
+        }
         if (chap != 1)
         {
             try
