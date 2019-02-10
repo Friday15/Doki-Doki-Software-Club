@@ -1,0 +1,6 @@
+Player;`background;0
+RIA;Congratulations on completing the game.;0;M
+RIA;The your browser will automatically download your certificate after this line;0;M
+Player
+Player;`clear;;RIA
+Player;`end
