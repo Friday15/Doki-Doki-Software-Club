@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: b041a151f09577b47ae391d074525634, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: fdc2a1784ff72fa4aa6002644925fac7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -1496,6 +1496,11 @@ Prefab:
       propertyPath: m_Colors.m_HighlightedColor.b
       value: 0.7529412
       objectReference: {fileID: 0}
+    - target: {fileID: 114770857776090420, guid: ebce0ffcc0ae0d44c82c806136015710,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc2a1784ff72fa4aa6002644925fac7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebce0ffcc0ae0d44c82c806136015710, type: 2}
   m_IsPrefabAsset: 0
@@ -1533,7 +1538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -3.5000114}
+  m_AnchoredPosition: {x: 0, y: -3.5000153}
   m_SizeDelta: {x: -74.3, y: -36.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143150633
@@ -1547,7 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: f708ad931985e2545b202ae35efc4d00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -1720,6 +1725,8 @@ MonoBehaviour:
   Sound: {fileID: 2122934853}
   Claps: {fileID: 8300000, guid: 5774ff91e7cd4964083f4ca456cabee8, type: 3}
   Notes: {fileID: 8300000, guid: 4ab763316bc94b84da70074723421d0f, type: 3}
+  Correct: {fileID: 0}
+  Wrong: {fileID: 0}
 --- !u!114 &1270945931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,7 +2114,7 @@ MonoBehaviour:
   bg:
   - {fileID: 2800000, guid: 013ef1eba3ac24043857e39525ed3201, type: 3}
   - {fileID: 2800000, guid: 20ba09788e2332e43bc297f4d2aaccff, type: 3}
-  - {fileID: 2800000, guid: f96cc20d942802040b74bde615a4b8b0, type: 3}
+  - {fileID: 2800000, guid: 063bd94c1aa437349b2f84125419aa99, type: 3}
 --- !u!23 &1446233149
 MeshRenderer:
   m_ObjectHideFlags: 0
